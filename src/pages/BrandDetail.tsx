@@ -47,6 +47,223 @@ const BrandDetail = () => {
         'Premium design aesthetics'
       ]
     },
+    'apl-apollo': {
+  name: 'APL Apollo',
+  description: 'Leading manufacturer of structural steel tubes and pipes in India',
+  founded: '1986',
+  categories: ['TMT Rebars'],
+  products: [
+    { name: 'TMT Rebars', category: 'TMT Rebars', description: 'High strength deformed bars for construction' }
+  ],
+  features: [
+    'High durability and strength',
+    'Trusted by leading developers',
+    'ISO certified manufacturing'
+  ]
+},
+'kamdhenu': {
+  name: 'Kamdhenu',
+  description: 'Renowned brand for quality steel and building materials',
+  founded: '1994',
+  categories: ['TMT Rebars', 'MS Structures', 'AC Sheets'],
+  products: [
+    { name: 'Kamdhenu TMT Bars', category: 'TMT Rebars', description: 'Earthquake-resistant TMT bars' },
+    { name: 'Kamdhenu MS Angles', category: 'MS Structures', description: 'Mild steel angles for structural use' },
+    { name: 'Kamdhenu AC Sheets', category: 'AC Sheets', description: 'Durable roofing sheets for all weather' }
+  ],
+  features: [
+    'ISI certified products',
+    'Excellent bendability and weldability',
+    'Corrosion-resistant coatings'
+  ]
+},
+'msp': {
+  name: 'MSP',
+  description: 'Trusted name in steel manufacturing and infrastructure materials',
+  founded: '2003',
+  categories: ['TMT Rebars'],
+  products: [
+    { name: 'MSP Gold TMT Bars', category: 'TMT Rebars', description: 'Superior quality rebars with high tensile strength' }
+  ],
+  features: [
+    'Thermo-mechanically treated',
+    'Consistent quality',
+    'Preferred by engineers nationwide'
+  ]
+},
+'shrishti': {
+  name: 'Shrishti',
+  description: 'Affordable and durable TMT bars for modern construction needs',
+  founded: '2010',
+  categories: ['TMT Rebars'],
+  products: [
+    { name: 'Shrishti TMT Bars', category: 'TMT Rebars', description: 'Economical and reliable TMT rebars' }
+  ],
+  features: [
+    'Value for money',
+    'Rural and urban coverage',
+    'Compliant with Indian standards'
+  ]
+},
+'tata': {
+  name: 'TATA',
+  description: 'Legacy brand offering high-grade structural steel and roofing solutions',
+  founded: '1907',
+  categories: ['MS Structures', 'AC Sheets'],
+  products: [
+    { name: 'TATA Structura', category: 'MS Structures', description: 'Steel hollow sections for construction' },
+    { name: 'TATA Durashine Sheets', category: 'AC Sheets', description: 'Color-coated roofing sheets' }
+  ],
+  features: [
+    'Long-lasting quality',
+    'Corrosion-resistant material',
+    'Widespread availability'
+  ]
+},
+'apollo': {
+  name: 'Apollo',
+  description: 'High-performance MS structure and steel products',
+  founded: '1986',
+  categories: ['MS Structures'],
+  products: [
+    { name: 'Apollo Steel Tubes', category: 'MS Structures', description: 'Tubular steel structures for industrial use' }
+  ],
+  features: [
+    'Superior finish',
+    'Precision engineered',
+    'Available in multiple shapes and sizes'
+  ]
+},
+'everest': {
+  name: 'Everest',
+  description: 'Innovative roofing and building solutions provider',
+  founded: '1934',
+  categories: ['AC Sheets'],
+  products: [
+    { name: 'Everest AC Sheets', category: 'AC Sheets', description: 'Asbestos cement sheets for roofing' }
+  ],
+  features: [
+    'Weatherproof and durable',
+    'Quick installation',
+    'Economical for rural buildings'
+  ]
+},
+'supreme': {
+  name: 'Supreme',
+  description: 'Leader in plastic products and water tank solutions in India',
+  founded: '1942',
+  categories: ['Water Tanks'],
+  products: [
+    { name: 'Supreme Water Tanks', category: 'Water Tanks', description: 'High-quality plastic tanks for water storage' }
+  ],
+  features: [
+    'FDA-approved material',
+    'UV stabilized',
+    'Leak-proof design'
+  ]
+},
+'american-standard': {
+  name: 'American Standard',
+  description: 'Stylish and sustainable bathroom products and solutions',
+  founded: '1875',
+  categories: ['Faucets & Sanitaryware'],
+  products: [
+    { name: 'Bathroom Faucets', category: 'Faucets & Sanitaryware', description: 'Designer faucets for luxury bathrooms' },
+    { name: 'Toilets and Basins', category: 'Faucets & Sanitaryware', description: 'Ergonomic and efficient sanitaryware' }
+  ],
+  features: [
+    'Global design',
+    'Water efficiency',
+    'Ergonomic and user-friendly'
+  ]
+},
+'jaquar': {
+  name: 'Jaquar',
+  description: 'Complete bathroom solutions with a focus on sustainability and innovation',
+  founded: '1960',
+  categories: ['Faucets & Sanitaryware'],
+  products: [
+    { name: 'Jaquar Faucets', category: 'Faucets & Sanitaryware', description: 'Premium faucets with chrome finish' },
+    { name: 'Sanitaryware', category: 'Faucets & Sanitaryware', description: 'Elegant toilets and wash basins' }
+  ],
+  features: [
+    'Green products',
+    'Global quality certifications',
+    'Extensive service network'
+  ]
+},
+'colstone': {
+  name: 'Colstone',
+  description: 'Reliable provider of bathroom and sanitary fittings',
+  founded: '2005',
+  categories: ['Faucets & Sanitaryware'],
+  products: [
+    { name: 'Colstone Faucets', category: 'Faucets & Sanitaryware', description: 'Affordable and modern designs' }
+  ],
+  features: [
+    'Cost-effective',
+    'Rust-resistant',
+    'Contemporary styling'
+  ]
+},
+'hindware': {
+  name: 'Hindware',
+  description: 'Trusted name in Indian homes for sanitaryware and faucets',
+  founded: '1960',
+  categories: ['Faucets & Sanitaryware'],
+  products: [
+    { name: 'Hindware Faucets', category: 'Faucets & Sanitaryware', description: 'Innovative water-saving taps' },
+    { name: 'Hindware Toilets', category: 'Faucets & Sanitaryware', description: 'Hygienic and easy-to-clean designs' }
+  ],
+  features: [
+    'Affordable luxury',
+    'Pan-India availability',
+    'Smart bathroom technology'
+  ]
+},
+'aries': {
+  name: 'Aries',
+  description: 'Emerging brand in bathroom and kitchen fittings',
+  founded: '2012',
+  categories: ['Faucets & Sanitaryware'],
+  products: [
+    { name: 'Aries Faucets', category: 'Faucets & Sanitaryware', description: 'Modern faucet designs with strong build' }
+  ],
+  features: [
+    'Competitive pricing',
+    'Durable build',
+    'Modern aesthetics'
+  ]
+},
+'vectus': {
+  name: 'Vectus',
+  description: 'Leading polymer-based water storage and plumbing solutions',
+  founded: '2004',
+  categories: ['Water Tanks'],
+  products: [
+    { name: 'Vectus Water Tanks', category: 'Water Tanks', description: 'UV stabilized triple-layer tanks' }
+  ],
+  features: [
+    'BPA-free',
+    'Multi-layer protection',
+    'ISI certified'
+  ]
+},
+'birla-opus': {
+  name: 'Birla Opus',
+  description: 'Innovative paint brand from Aditya Birla Group offering eco-friendly coatings',
+  founded: '2022',
+  categories: ['Paint'],
+  products: [
+    { name: 'Birla Opus Premium Emulsion', category: 'Paint', description: 'Washable wall paint with rich finish' }
+  ],
+  features: [
+    'Eco-friendly formula',
+    'Stain-resistant',
+    'Smooth matte finish'
+  ]
+}
+,
     'sintex': {
       name: 'Sintex',
       description: 'India\'s leading manufacturer of plastic water tanks and storage solutions',
