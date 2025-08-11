@@ -4,7 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Award, Building, Star, MapPin } from 'lucide-react';
-
+import { Slider } from '@/components/ui/slider';
+import cementLogo from "../assets/Cement/download.png";
 const Home = () => {
   const whyChooseUs = [
     {
@@ -41,6 +42,19 @@ const Home = () => {
     { name: "Sintex", slug: "sintex" },
     { name: "Birla Opus", slug: "birla-opus" }
   ];
+  const brandLogos = [
+    { name: "UltraTech", img: "/logos/ultratech.png", slug: "ultratech" },
+    { name: "TATA", img: "/logos/tata.png", slug: "tata" },
+    { name: "APL Apollo", img: "/logos/apl-apollo.png", slug: "apl-apollo" },
+    { name: "Kamdhenu", img: "/logos/kamdhenu.png", slug: "kamdhenu" },
+    { name: "Grohe", img: "/logos/grohe.png", slug: "grohe" },
+    { name: "American Standard", img: "/logos/american-standard.png", slug: "american-standard" },
+    { name: "Jaquar", img: "/logos/jaquar.png", slug: "jaquar" },
+    { name: "Supreme", img: "/logos/supreme.png", slug: "supreme" },
+    { name: "Sintex", img: "/logos/sintex.png", slug: "sintex" },
+    { name: "Birla Opus", img: "/logos/birla-opus.png", slug: "birla-opus" }
+  ];
+
 
   return (
     <div className="min-h-screen">
@@ -58,9 +72,9 @@ const Home = () => {
               Your one-stop solution for premium building materials
             </p>
             <p className="text-lg mb-12 text-gray-400 max-w-3xl mx-auto">
-              Founded by Mr. Pawan Ajmani, we've grown from humble beginnings with cement and steel 
-              to offering an extensive range of high-quality building materials. With decades of trust, 
-              experience, and innovation, Vishesh Build Mart is now helmed by his dynamic sons, 
+              Founded by Mr. Pawan Ajmani, we've grown from humble beginnings with cement and steel
+              to offering an extensive range of high-quality building materials. With decades of trust,
+              experience, and innovation, Vishesh Build Mart is now helmed by his dynamic sons,
               Mr. Vishesh Ajmani and CA Vishal Ajmani.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -81,7 +95,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover what makes Vishesh Build Mart the preferred choice for builders, 
+              Discover what makes Vishesh Build Mart the preferred choice for builders,
               architects, and homeowners across the region.
             </p>
           </div>
@@ -100,6 +114,61 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/*featureed logo*/}
+      <section className="py-12 bg-gray-50 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
+            Brands We Deal In
+          </h2>
+
+          <div className="relative w-full overflow-hidden">
+            <div className="flex animate-scroll gap-16">
+              {/* Repeat the logos twice for smooth infinite loop */}
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex gap-16">
+                  {[
+                    { name: "UltraTech", img: "/assets/logos/ultratech.png", slug: "ultratech" }, // Local (in public/assets/logos)
+                    { name: "TATA", img: "https://upload.wikimedia.org/wikipedia/commons/6/64/Tata_logo.svg", slug: "tata" },
+                    { name: "APL Apollo", img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apollo_Steel_Tubes_logo.png", slug: "apl-apollo" },
+                    { name: "Kamdhenu", img: "https://kamdhenuwebsite.blob.core.windows.net/kamdhenuwebsite/Kamdhenu-Logo.png", slug: "kamdhenu" },
+                    { name: "Grohe", img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Grohe_logo.svg", slug: "grohe" },
+                    { name: "Jaquar", img: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jaquar_logo.svg", slug: "jaquar" }
+                  ].map((brand, idx) => (
+                    <a
+                      key={`${brand.name}-${i}-${idx}`}
+                      href={`/brands/${brand.slug}`}
+                      className="flex flex-col items-center min-w-[120px]"
+                    >
+                      <img
+                        src={brand.img}
+                        alt={brand.name}
+                        className="h-16 w-auto object-contain"
+                      />
+                      <span className="mt-2 text-sm text-gray-700">{brand.name}</span>
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <style jsx>{`
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-scroll {
+      animation: scroll 20s linear infinite;
+    }
+  `}</style>
+      </section>
+
+
 
       {/* Featured Brands */}
       <section className="py-20">
@@ -138,7 +207,7 @@ const Home = () => {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Explore our comprehensive product range and start building your dream today! 
+            Explore our comprehensive product range and start building your dream today!
             Get expert guidance and premium materials for your construction needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

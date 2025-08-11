@@ -14,7 +14,7 @@ const Footer = () => {
               <h3 className="text-lg font-bold">Vishesh Build Mart</h3>
             </div>
             <p className="text-gray-300 mb-4">
-              Your trusted partner for premium building materials since 1990. 
+              Your trusted partner for premium building materials since 1990.
               Quality, reliability, and excellence in every project.
             </p>
             <div className="flex items-center space-x-2 text-orange-400">
@@ -53,19 +53,39 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-500 mt-1" />
-                <div className="text-gray-300">
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                    "Bilaspur, Chhattisgarh"
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
                   <p>Main Store Address</p>
                   <p>Bilaspur, Chhattisgarh</p>
-                </div>
+                </a>
               </div>
+
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500" />
-                <span className="text-gray-300">+91 XXXXX XXXXX</span>
+                <a
+                  href="tel:+919755853857"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  +91 9755853857
+                </a>
               </div>
+
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-500" />
-                <span className="text-gray-300">info@visheshbuildmart.com</span>
+                <a
+                  href="mailto:cavishalajmani@gmail.com"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  cavishalajmani@gmail.com
+                </a>
               </div>
+
             </div>
           </div>
         </div>

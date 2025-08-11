@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import storeLocationImg from '@assets/storelocation/storelocator.png';
 import { Building, Wrench, Droplets, Paintbrush, Hammer, ArrowRight } from 'lucide-react';
 
 const Categories = () => {
@@ -26,7 +27,12 @@ const Categories = () => {
       title: 'Roofing & Waterproofing',
       description: 'Complete roofing and waterproofing solutions for protection',
       icon: <Droplets className="h-8 w-8 text-orange-500" />,
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+      images: ['https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+        '/assets/roofiing/AC SHEET.webp',
+        '/assets/roofiing/AC SHEETS.webp',
+        './assets/roofiing/GC SHEETS COLOUR COATED.jpg',
+        './assets/roofiing/gc-roofing-sheet-500x500.webp'
+      ],
       brands: ['TATA', 'UltraTech'],
       productCount: 2,
       products: [
@@ -83,7 +89,7 @@ const Categories = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Product Categories</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our comprehensive range of building materials organized by category. 
+            Explore our comprehensive range of building materials organized by category.
             From structural materials to finishing touches, find everything you need for your construction projects.
           </p>
         </div>
@@ -93,8 +99,8 @@ const Categories = () => {
           {categories.map((category) => (
             <Card key={category.id} className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={category.image} 
+                <img
+                  src={category.image}
                   alt={category.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform"
                 />
@@ -152,7 +158,7 @@ const Categories = () => {
           <Building className="h-12 w-12 text-orange-500 mx-auto mb-4" />
           <h2 className="text-3xl font-bold mb-6">Need Help Choosing the Right Category?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Our expert team can guide you through our product categories and help you find 
+            Our expert team can guide you through our product categories and help you find
             the perfect materials for your specific construction needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

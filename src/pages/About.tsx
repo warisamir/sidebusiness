@@ -2,6 +2,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Award, Target, Users, Building } from 'lucide-react';
+import BrandsTable from './Brandtables';
 
 const About = () => {
   const achievements = [
@@ -197,6 +198,8 @@ const About = () => {
           </div>
         </div>
       </section>
+      <BrandsTable/>
+
     </div>
   );
 };

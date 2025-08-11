@@ -2,24 +2,16 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
-
 const StoreLocator = () => {
   const locations = [
     {
       name: "Main Store",
-      address: "Vishesh Build Mart, Station Road, Bilaspur, Chhattisgarh - 495001",
-      phone: "+91 XXXXX XXXXX",
-      hours: "Monday - Saturday: 9:00 AM - 7:00 PM",
+      address: "Jagmal Chowk, nearby Yamaha Showroom, Dayalband Main Road, Bilaspur, Chhattisgarh 495001",
+      phone: ['+91 9755853857', '9981190855', '9826127586'],
+      hours: "Monday - Saturday: 8:00 AM - 8:00 PM",
+      extradays: "Sunday: 8:00 AM - 2:00 PM ",
       type: "Main Store & Office",
       description: "Our flagship store with the complete range of building materials and expert consultation."
-    },
-    {
-      name: "Warehouse & Distribution Center",
-      address: "Industrial Area, Near Transport Nagar, Bilaspur, Chhattisgarh - 495004",
-      phone: "+91 XXXXX XXXXX",
-      hours: "Monday - Saturday: 8:00 AM - 6:00 PM",
-      type: "Warehouse",
-      description: "Large inventory storage and bulk order fulfillment center."
     }
   ];
 
@@ -52,7 +44,7 @@ const StoreLocator = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols gap-8 max-w-6xl mx-auto">
             {locations.map((location, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
@@ -77,24 +69,38 @@ const StoreLocator = () => {
                       <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
                       <div>
                         <p className="font-semibold">Phone</p>
-                        <p className="text-gray-700">{location.phone}</p>
+                        <div className="text-gray-700 space-y-1">
+                          {location.phone.map((num: string, idx: number) => (
+                            <span key={idx}>{num}{idx < location.phone.length - 1 && ', '} </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
 
-                    <div className="flex items-center space-x-3">
-                      <Clock className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                      <div>
-                        <p className="font-semibold">Business Hours</p>
-                        <p className="text-gray-700">{location.hours}</p>
-                        <p className="text-sm text-gray-500">Closed on Sundays</p>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6">
+                      <div className="flex items-center space-x-3">
+                        <Clock className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold">Business Hours</p>
+                          <p className="text-gray-700">{location.hours}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <Clock className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold">Extra Hours</p>
+                          <p className="text-gray-700">{location.extradays}</p>
+                        </div>
                       </div>
                     </div>
+
                   </div>
 
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a 
-                        href={`tel:${location.phone}`}
+                        href={`tel:${location.phone[0]}`}
                         className="flex items-center justify-center px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
                       >
                         <Phone className="h-4 w-4 mr-2" />
@@ -117,20 +123,29 @@ const StoreLocator = () => {
           </div>
 
           {/* Map Placeholder */}
-          <div className="mt-16">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6 text-center">Find Us on Map</h3>
-                <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-600 text-lg">Interactive map coming soon</p>
-                    <p className="text-gray-500">For now, click "Get Directions" above to navigate using Google Maps</p>
-                  </div>
+            <div className="mt-16">
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold mb-6 text-center">Find Us on Map</h3>
+
+                <div className="bg-gray-200 rounded-lg h-96 overflow-hidden">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                      "Jagmal Chowk, nearby Yamaha Showroom, Dayalband Main Road, Bilaspur, Chhattisgarh 495001"
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/assets/location/storelocation.png"
+                      alt="Company Location"
+                      className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition"
+                    />
+                  </a>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+                </CardContent>
+              </Card>
+            </div>
 
           {/* Contact Info */}
           <div className="mt-16">
@@ -141,10 +156,13 @@ const StoreLocator = () => {
                   Our team is here to help guide you to the right location for your needs.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="tel:+91XXXXXXXXX" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+                  <a href="tel:+91 9755853857" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
                     Call for Directions
                   </a>
-                  <a href="mailto:info@visheshbuildmart.com" className="inline-flex items-center justify-center px-6 py-3 border border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-colors">
+                  <a
+                    href="mailto:cavishalajmani@visheshbuildmart.com,cavishalajmani@gmail.com"
+                    className="inline-flex items-center justify-center px-6 py-3 border border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-colors"
+                  >
                     Email Us
                   </a>
                 </div>
