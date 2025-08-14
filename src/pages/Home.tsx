@@ -5,16 +5,17 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Award, Building, Star, MapPin } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
-import cement from '/assets/Cement/coverimage.png';
-import tata from '/assets/logos/tata.jpg';
-import aplapollo from '/assets/logos/Aplapollo.jpg';
-import kamdhenu from '/assets/logos/kamdhenu.jpg';
-import grohe from '/assets/logos/download.png';
-import AmericanStandard from '/assets/logos/American standard.png';
-import jaguar from '/assets/logos/jaguar.webp';
-import supreme from '/assets/logos/supreme.png';
-import sintex from '/assets/logos/sintex.jpg';
-import birla from '/assets/logos/birla.jpg';
+import cement from '../pages/assets/Cement/coverimage.png';
+import tata from '../pages/assets/logos/tata.jpg';
+import aplapollo from '../pages/assets/logos/Aplapollo.jpg';
+import kamdhenu from '../pages/assets/logos/kamdhenu.jpg';
+import grohe from '../pages/assets/logos/download.png';
+import AmericanStandard from '../pages/assets/logos/American standard.png';
+import jaguar from '../pages/assets/logos/jaguar.webp';
+import supreme from '../pages/assets/logos/supreme.png';
+import sintex from '../pages/assets/logos/sintex.jpg';
+import birla from '../pages/assets/logos/birla.jpg';
+
 const Home = () => {
   const whyChooseUs = [
     {
