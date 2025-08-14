@@ -8,7 +8,7 @@ import Cement from '../../public/assets/Cement/Cement.png';
 import download from '../../public/assets/Cement/OPC.png';
 import PPC from '../../public/assets/Cement/PPC.png';
 import PSC from '../../public/assets/Cement/PSC.png';
-import Cover from '../../public/assets/Cement/CoverImagf.png';
+import Cover from '../../public/assets/Cement/coverimage.png';
 //second
 import Apiapollo from '../../public/assets/tmt/Apl Apollo.webp';
 import Kamdhenu from '../../public/assets/tmt/Kamdhenu.jpg';
