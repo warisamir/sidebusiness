@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart, LucideX } from 'lucide-react';
-import Cover from '/public/assets/Cement/CoverImagf.png';
+import Cover from '/public/assets/Cement/coverimage.png';
 //second
 import rebar from '/public/assets/tmt/rebardcover.webp';
 //msccover
