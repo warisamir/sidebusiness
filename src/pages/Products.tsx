@@ -4,29 +4,29 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart, LucideX } from 'lucide-react';
-import Cover from '/public/assets/Cement/coverimage.png';
+import Cover from '../pages/assets/Cement/coverimage.png';
 //second
-import rebar from '/public/assets/tmt/rebardcover.webp';
+import rebar from '../pages/assets/tmt/rebardcover.webp';
 //msccover
-import mscCover from '/public/assets/msstructure/cover.jpg';
+import mscCover from '../pages/assets/msstructure/cover.jpg';
 //acsheet 
-import cover from '/public/assets/sheet/cover.jpg';
+import cover from '../pages/assets/sheet/cover.jpg';
 //pipes
-import Agricultre from '/public/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+import Agricultre from '../pages/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
 //waterproofing
-import waterprofing from '/public/assets/waterprofing/Coverpage.webp';
+import waterprofing from '../pages/assets/waterprofing/Coverpage.webp';
 //download
-import downld from '/public/assets/faucet/download.png';
+import downld from '../pages/assets/faucet/download.png';
 // watertank 
-import Cool from '/public/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+import Cool from '../pages/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
 //waterteeatment
-import waterTreatment from '/public/assets/waterTreatment/image.png';//
+import waterTreatment from '../pages/assets/waterTreatment/image.png';//
 //tiles 
-import walladhesive from '/public/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
+import walladhesive from '../pages/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
 //paint&putty
-import acrylic from '/public/assets/paint&putty/acrylic.jpg';
+import acrylic from '../pages/assets/paint&putty/acrylic.jpg';
 //luxuxry 
-import luzuzry from '/public/assets/luxury/wellness.jpg'
+import luzuzry from '../pages/assets/luxury/wellness.jpg'
 const Products = () => {
   const allProducts = [
     {
