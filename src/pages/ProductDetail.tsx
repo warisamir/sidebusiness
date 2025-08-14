@@ -4,79 +4,80 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Phone, Mail, MessageCircle, DownloadIcon, AlarmPlus } from 'lucide-react';
-import Cement from '../../public/assets/Cement/Cement.png';
-import download from '../../public/assets/Cement/OPC.png';
-import PPC from '../../public/assets/Cement/PPC.png';
-import PSC from '../../public/assets/Cement/PSC.png';
-import Cover from '../../public/assets/Cement/coverimage.png';
+import Cement from '/assets/Cement/Cement.png';
+import download from '/assets/Cement/OPC.png';
+import PPC from '/assets/Cement/PPC.png';
+import PSC from '/assets/Cement/PSC.png';
+import Cover from '/assets/Cement/coverimage.png';
 //second
-import Apiapollo from '../../public/assets/tmt/Apl Apollo.webp';
-import Kamdhenu from '../../public/assets/tmt/Kamdhenu.jpg';
-import MST from '../../public/assets/tmt/MSP TMT.webp';
-import shristi from '../../public/assets/tmt/shristi-1.jpg';
-import rebar from '../../public/assets/tmt/rebardcover.webp';
+import Apiapollo from '/assets/tmt/Apl Apollo.webp';
+import Kamdhenu from '/assets/tmt/Kamdhenu.jpg';
+import MST from '/assets/tmt/MSP TMT.webp';
+import shristi from '/assets/tmt/shristi-1.jpg';
+import rebar from '/assets/tmt/rebardcover.webp';
 //msstructure 
-import barbed from '../../public/assets/msstructure/Barbed Wire.avif';
-import c2 from '../../public/assets/msstructure/c2.jpg';
-import fencing from '../../public/assets/msstructure/Fencing wire application image.jpg';
-import feningwire from '../../public/assets/msstructure/Fencing wire application image.jpg';
-import mschanel from '../../public/assets/msstructure/MS channel.jpg';
-import MSFLat from '../../public/assets/msstructure/MS FLATS.webp';
-import Msround from '../../public/assets/msstructure/MS Round Pipe.webp';
-import msquare from '../../public/assets/msstructure/MS Square Pipe.png';
-import mainangle from '../../public/assets/msstructure/MS-Main-Angle.jpg';
-import msrect from '../../public/assets/msstructure/MS-Main-Angle.jpg';
-import msstruct from '../../public/assets/msstructure/msstrucutre.webp';
-import mscCover from '../../public/assets/msstructure/cover.jpg';
+import barbed from '/assets/msstructure/Barbed Wire.avif';
+import c2 from '/assets/msstructure/c2.jpg';
+import fencing from '/assets/msstructure/Fencing wire application image.jpg';
+import feningwire from '/assets/msstructure/Fencing wire application image.jpg';
+import mschanel from '/assets/msstructure/MS channel.jpg';
+import MSFLat from '/assets/msstructure/MS FLATS.webp';
+import Msround from '/assets/msstructure/MS Round Pipe.webp';
+import msquare from '/assets/msstructure/MS Square Pipe.png';
+import mainangle from '/assets/msstructure/MS-Main-Angle.jpg';
+import msrect from '/assets/msstructure/MS-Main-Angle.jpg';
+import msstruct from '/assets/msstructure/msstrucutre.webp';
+import mscCover from '/assets/msstructure/cover.jpg';
 //fouth
-import Acsheet from '../../public/assets/sheet/AC SHEET.webp';
-import Acsheets from '../../public/assets/sheet/AC SHEETS.webp';
-import GCsheet from '../../public/assets/sheet/GC SHEETS COLOUR COATED.jpg';
-import gcroofing from '../../public/assets/sheet/gc-roofing-sheet-500x500.webp';
-import cover from '../../public/assets/sheet/cover.jpg';
+import Acsheet from '/assets/sheet/AC SHEET.webp';
+import Acsheets from '/assets/sheet/AC SHEETS.webp';
+import GCsheet from '/assets/sheet/GC SHEETS COLOUR COATED.jpg';
+import gcroofing from '/assets/sheet/gc-roofing-sheet-500x500.webp';
+import cover from '/assets/sheet/cover.jpg';
 //fifth
-import CVPC from '../../public/assets/pipes/CPVC.png';
-import Agricultre from '../../public/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
-import Nudrain from '../../public/assets/pipes/NU-Drain Readymade Inspection Chambers.jpg';
-import Nudrinaready from '../../public/assets/pipes/Nu-Drain Pipes.png';
-import Plastic from '../../public/assets/pipes/Plastic Septic Tank.jpg';
-import silaid from '../../public/assets/pipes/Silaid Rubber Lubricants.png';
-import Silbond from '../../public/assets/pipes/Silbond Solvent.png';
-import SWR from '../../public/assets/pipes/SWR Pipe & Drainage Systems.png';
-import UPVC from '../../public/assets/pipes/UPVC.png';
+import CVPC from '/assets/pipes/CPVC.png';
+import Agricultre from '/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+import Nudrain from '/assets/pipes/NU-Drain Readymade Inspection Chambers.jpg';
+import Nudrinaready from '/assets/pipes/Nu-Drain Pipes.png';
+import Plastic from '/assets/pipes/Plastic Septic Tank.jpg';
+import silaid from '/assets/pipes/Silaid Rubber Lubricants.png';
+import Silbond from '/assets/pipes/Silbond Solvent.png';
+import SWR from '/assets/pipes/SWR Pipe & Drainage Systems.png';
+import UPVC from '/assets/pipes/UPVC.png';
 //waterprofing
-import waterprofing from '../../public/assets/waterprofing/Coverpage.webp';
-import water from '../../public/assets/waterprofing/water.jpg';
+import waterprofing from '/assets/waterprofing/Coverpage.webp';
+import water from '/assets/waterprofing/water.jpg';
 //faucet
-import faucet from '../../public/assets/faucet/faucet.jpg';
-import front from '../../public/assets/faucet/front.jpg';
-import tap from '../../public/assets/faucet/tap.jpg';
-import downld from '../../public/assets/faucet/download.png';
+import faucet from '/assets/faucet/faucet.jpg';
+import front from '/assets/faucet/front.jpg';
+import tap from '/assets/faucet/tap.jpg';
+import downld from '/assets/faucet/download.png';
 //watertank
-import Amrutam from '../../public/assets/waterTank/Amrutam Underground Water Storage Tanks.jpg';
-import Copper from '../../public/assets/waterTank/CopperSheild Water Tanks.png';
-import Ecosil from '../../public/assets/waterTank/Ecosil Overhead Water Tank.jpg';
-import Siltank from '../../public/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
-import Weather from '../../public/assets/waterTank/WeatherShield Premium Overhead Water Storage Tanks.jpg';
-import Cool from '../../public/assets/vectuswatertank/Cool.webp';
-import Granite from '../../public/assets/vectuswatertank/Granito.webp';
-import mini from '../../public/assets/vectuswatertank/mini.webp';
+import Amrutam from '/assets/waterTank/Amrutam Underground Water Storage Tanks.jpg';
+import Copper from '/assets/waterTank/CopperSheild Water Tanks.png';
+import Ecosil from '/assets/waterTank/Ecosil Overhead Water Tank.jpg';
+import Siltank from '/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+import Weather from '/assets/waterTank/WeatherShield Premium Overhead Water Storage Tanks.jpg';
+import Cool from '/assets/vectuswatertank/Cool.webp';
+import Granite from '/assets/vectuswatertank/Granito.webp';
+import mini from '/assets/vectuswatertank/mini.webp';
 //waterTreatmentSolution 
-import watertreatment from '../../public/assets/waterTreatment/image.png';
-import watertr from '../../public/assets/waterTreatment/images.jpg';
+import watertreatment from '/assets/waterTreatment/image.png';
+import watertr from '/assets/waterTreatment/images.jpg';
 //tiels-adhesive
-import walladhesive from '../../public/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
-import wallputy from '../../public/assets/tiles-adhesive/download.jpg';
-import tiles from '../../public/assets/tiles-adhesive/tiles-adhesvie.jpg';
+import walladhesive from '/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
+import wallputy from '/assets/tiles-adhesive/download.jpg';
+import tiles from '/assets/tiles-adhesive/tiles-adhesvie.jpg';
 //paints
-import acrylic from '../../public/assets/paint&putty/acrylic.jpg';
-import Assian from '../../public/assets/paint&putty/assian.webp';
-import paint from '../../public/assets/paint&putty/paint.jpg';
-import walllputty from '../../public/assets/paint&putty/images.jpg';
+import acrylic from '/assets/paint&putty/acrylic.jpg';
+import Assian from '/assets/paint&putty/assian.webp';
+import paint from '/assets/paint&putty/paint.jpg';
+import walllputty from '/assets/paint&putty/images.jpg';
 //luxury 
-import luxuryone from '../../public/assets/luxury/download.jpg';
-import luzuzry from '../../public/assets/luxury/luzury.jpg';
-import wellness from '../../public/assets/luxury/wellness.jpg';
+import luxuryone from '/assets/luxury/download.jpg';
+import luzuzry from '/assets/luxury/luzury.jpg';
+import wellness from '/assets/luxury/wellness.jpg';
+
 const ProductDetail = () => {
   const { productSlug } = useParams();
 
