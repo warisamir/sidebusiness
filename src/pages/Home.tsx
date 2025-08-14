@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Award, Building, Star, MapPin } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
-import cementLogo from "../../public/assets/Cement/CoverImagf.png";
+import cementLogo from "../../public/assets/Cement/coverimage.png";
 import tata from '../../public/assets/logos/tata.jpg';
 import aplapollo from '../../public/assets/logos/Aplapollo.jpg';
 import kamdhenu from '../../public/assets/logos/kamdhenu.jpg';
