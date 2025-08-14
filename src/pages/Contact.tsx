@@ -28,8 +28,9 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-orange-500 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 98765 43211</p>
+                    <p className="text-gray-600">+91 9755853857</p>
+                    <p className='text-gray-600'>+91 9981190855</p>
+                    <p className="text-gray-600">+91 9826127586</p>
                   </div>
                 </div>
 
@@ -37,8 +38,9 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-orange-500 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-gray-600">info@visheshbuildmart.com</p>
-                    <p className="text-gray-600">sales@visheshbuildmart.com</p>
+                    <p className="text-gray-600">Visheshajmani2@gmail.com</p>
+                    <p className="text-gray-600">cavishalajmani@visheshbuildmart.com</p>
+                    <p className='text-grey-600'>cavishalajmani@gmail.com</p>
                   </div>
                 </div>
 
@@ -47,7 +49,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-gray-600">
-                      Main Road, Industrial Area<br />
+                      Jagmal Chowk, nearby Yamaha Showroom,<br/> 
+                      Dayalband Main Road,<br/> 
                       Bilaspur, Chhattisgarh 495001<br />
                       India
                     </p>
@@ -58,8 +61,8 @@ const Contact = () => {
                   <Clock className="h-6 w-6 text-orange-500 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
-                    <p className="text-gray-600">Sunday: 10:00 AM - 5:00 PM</p>
+                    <p className="text-gray-600">Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                    <p className="text-gray-600">Sunday 8:00 am- 2:00 pm</p>
                   </div>
                 </div>
               </div>
@@ -134,18 +137,23 @@ const Contact = () => {
         {/* Map Section */}
         <div className="mt-16">
           <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">Visit Our Store</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-4" />
-                  <p className="text-gray-600">Interactive map will be embedded here</p>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Main Road, Industrial Area, Bilaspur, Chhattisgarh
-                  </p>
-                </div>
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-6 text-center">Find Us on Map</h3>
+
+              <div className="bg-gray-200 rounded-lg h-96 overflow-hidden">
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                    "Jagmal Chowk, nearby Yamaha Showroom, Dayalband Main Road, Bilaspur, Chhattisgarh 495001"
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/assets/location/storelocation.png"
+                    alt="Company Location"
+                    className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition"
+                  />
+                </a>
               </div>
             </CardContent>
           </Card>

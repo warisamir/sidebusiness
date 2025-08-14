@@ -3,6 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/index.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+
+  /* Move half width because we duplicate */
+}
+
+.scroll-loop {
+  display: flex;
+  animation: scrollLoop 20s linear infinite;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

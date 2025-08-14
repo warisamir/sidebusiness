@@ -3,19 +3,91 @@ import { useParams, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Phone, Mail, MessageCircle } from 'lucide-react';
-
+import { ArrowLeft, Phone, Mail, MessageCircle, DownloadIcon, AlarmPlus } from 'lucide-react';
+import Cement from '../../public/assets/Cement/Cement.png';
+import download from '../../public/assets/Cement/OPC.png';
+import PPC from '../../public/assets/Cement/PPC.png';
+import PSC from '../../public/assets/Cement/PSC.png';
+import Cover from '../../public/assets/Cement/CoverImagf.png';
+//second
+import Apiapollo from '../../public/assets/tmt/Apl Apollo.webp';
+import Kamdhenu from '../../public/assets/tmt/Kamdhenu.jpg';
+import MST from '../../public/assets/tmt/MSP TMT.webp';
+import shristi from '../../public/assets/tmt/shristi-1.jpg';
+import rebar from '../../public/assets/tmt/rebardcover.webp';
+//msstructure 
+import barbed from '../../public/assets/msstructure/Barbed Wire.avif';
+import c2 from '../../public/assets/msstructure/c2.jpg';
+import fencing from '../../public/assets/msstructure/Fencing wire application image.jpg';
+import feningwire from '../../public/assets/msstructure/Fencing wire application image.jpg';
+import mschanel from '../../public/assets/msstructure/MS channel.jpg';
+import MSFLat from '../../public/assets/msstructure/MS FLATS.webp';
+import Msround from '../../public/assets/msstructure/MS Round Pipe.webp';
+import msquare from '../../public/assets/msstructure/MS Square Pipe.png';
+import mainangle from '../../public/assets/msstructure/MS-Main-Angle.jpg';
+import msrect from '../../public/assets/msstructure/MS-Main-Angle.jpg';
+import msstruct from '../../public/assets/msstructure/msstrucutre.webp';
+import mscCover from '../../public/assets/msstructure/cover.jpg';
+//fouth
+import Acsheet from '../../public/assets/sheet/AC SHEET.webp';
+import Acsheets from '../../public/assets/sheet/AC SHEETS.webp';
+import GCsheet from '../../public/assets/sheet/GC SHEETS COLOUR COATED.jpg';
+import gcroofing from '../../public/assets/sheet/gc-roofing-sheet-500x500.webp';
+import cover from '../../public/assets/sheet/cover.jpg';
+//fifth
+import CVPC from '../../public/assets/pipes/CPVC.png';
+import Agricultre from '../../public/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+import Nudrain from '../../public/assets/pipes/NU-Drain Readymade Inspection Chambers.jpg';
+import Nudrinaready from '../../public/assets/pipes/Nu-Drain Pipes.png';
+import Plastic from '../../public/assets/pipes/Plastic Septic Tank.jpg';
+import silaid from '../../public/assets/pipes/Silaid Rubber Lubricants.png';
+import Silbond from '../../public/assets/pipes/Silbond Solvent.png';
+import SWR from '../../public/assets/pipes/SWR Pipe & Drainage Systems.png';
+import UPVC from '../../public/assets/pipes/UPVC.png';
+//waterprofing
+import waterprofing from '../../public/assets/waterprofing/Coverpage.webp';
+import water from '../../public/assets/waterprofing/water.jpg';
+//faucet
+import faucet from '../../public/assets/faucet/faucet.jpg';
+import front from '../../public/assets/faucet/front.jpg';
+import tap from '../../public/assets/faucet/tap.jpg';
+import downld from '../../public/assets/faucet/download.png';
+//watertank
+import Amrutam from '../../public/assets/waterTank/Amrutam Underground Water Storage Tanks.jpg';
+import Copper from '../../public/assets/waterTank/CopperSheild Water Tanks.png';
+import Ecosil from '../../public/assets/waterTank/Ecosil Overhead Water Tank.jpg';
+import Siltank from '../../public/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+import Weather from '../../public/assets/waterTank/WeatherShield Premium Overhead Water Storage Tanks.jpg';
+import Cool from '../../public/assets/vectuswatertank/Cool.webp';
+import Granite from '../../public/assets/vectuswatertank/Granito.webp';
+import mini from '../../public/assets/vectuswatertank/mini.webp';
+//waterTreatmentSolution 
+import watertreatment from '../../public/assets/waterTreatment/image.png';
+import watertr from '../../public/assets/waterTreatment/images.jpg';
+//tiels-adhesive
+import walladhesive from '../../public/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
+import wallputy from '../../public/assets/tiles-adhesive/download.jpg';
+import tiles from '../../public/assets/tiles-adhesive/tiles-adhesvie.jpg';
+//paints
+import acrylic from '../../public/assets/paint&putty/acrylic.jpg';
+import Assian from '../../public/assets/paint&putty/assian.webp';
+import paint from '../../public/assets/paint&putty/paint.jpg';
+import walllputty from '../../public/assets/paint&putty/images.jpg';
+//luxury 
+import luxuryone from '../../public/assets/luxury/download.jpg';
+import luzuzry from '../../public/assets/luxury/luzury.jpg';
+import wellness from '../../public/assets/luxury/wellness.jpg';
 const ProductDetail = () => {
   const { productSlug } = useParams();
 
   const productData = {
     // Cement Products
     'cement': {
-      name: 'OPC 43 Grade Cement',
+      name: 'Ultratech Cement',
       brand: 'UltraTech',
       category: 'Cement',
-      price: '₹350 per bag (50kg)',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      coverImage: Cover,
+      image: [Cement, download, PPC, PSC, Cement, download], //'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
       description: 'High-quality Ordinary Portland Cement (OPC) 43 Grade is ideal for general construction work. This cement provides excellent strength and durability for residential and commercial buildings.',
       specifications: [
         'Grade: 43',
@@ -38,9 +110,9 @@ const ProductDetail = () => {
       name: 'TMT Rebars Fe 415 Grade',
       brand: 'APL Apollo',
       category: 'TMT Rebars',
-      price: '₹58,000 per MT',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-      description: 'Thermo-Mechanically Treated (TMT) rebars with Fe 415 grade steel. These rebars offer superior strength, ductility, and corrosion resistance for all types of construction.',
+      coverImage: rebar,
+      image: [Apiapollo, Kamdhenu, MST, shristi],
+      description: `We offer top-quality TMT bars from trusted brands that deliver unmatched strength, flexibility, and performance for all your construction needs. Explore our available brands, sizes, and product visuals below:`,
       specifications: [
         'Grade: Fe 415',
         'Yield Strength: 415 N/mm²',
@@ -54,17 +126,122 @@ const ProductDetail = () => {
         'Superior bendability',
         'Earthquake resistant',
         'Fire resistant properties'
+      ],
+      productType: [
+        {
+          image: [Apiapollo],
+          description: `Known for excellent tensile strength and corrosion resistance, 
+    APL Apollo TMT bars are ideal for both residential and commercial structures.
+    Available Sizes:
+    8 mm
+    10 mm
+    12 mm
+    16 mm
+    20 mm
+    25 mm`
+        },
+        {
+          image: [Kamdhenu],
+          description: `Kamdhenu TMT bars offer superior bendability, high ductility, and excellent earthquake resistance.
+    Available Sizes:
+    8 mm
+    10 mm
+    12 mm
+    16 mm
+    20 mm
+    25 mm`
+        },
+        {
+          image: [MST],
+          description: `MST TMT bars are designed for maximum tensile strength and long-lasting durability, perfect for heavy construction projects.
+    Available Sizes:
+    8 mm
+    10 mm
+    12 mm
+    16 mm
+    20 mm
+    25 mm`
+        },
+        {
+          image: [shristi],
+          description: `Shristi TMT bars provide excellent corrosion resistance and reliable structural performance in all climates.
+    Available Sizes:
+    8 mm
+    10 mm
+    12 mm
+    16 mm
+    20 mm
+    25 mm`
+        }
       ]
     },
-
     // MS Structures
     'ms-structures': {
       name: 'MS Structural Angles & Pipes',
-      brand: 'TATA',
+      brand: 'TATA & APL Apollo',
       category: 'MS Structures',
-      price: '₹55,000 per MT',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-      description: 'High-quality Mild Steel structural angles and pipes for construction frameworks, supports, and structural applications.',
+      coverImage: fencing,
+      image: [barbed, fencing, c2, fencing, msrect, msstruct, mainangle, MSFLat, Msround, mschanel, msquare],
+      description: `MS Structural Sections – Strength in Every Shape<br/>
+      <strong>TATA & APL Apollo | Available at Vishesh Build Mart</strong><br/>
+      At Vishesh Build Mart, we offer a premium range of MS Structural Pipes, Angles, Channels, Flats, Fencing Jali, and Barbed Wire from industry leaders TATA Steel and APL Apollo. These structural materials are known for their superior strength, durability, and precision, making them ideal for a wide range of industrial, residential, and fabrication needs.<br/><br/>
+
+      🔹 <strong>Available Shapes & Categories</strong><br/>
+      Round Pipes<br/>
+      Square Pipes<br/>
+      Rectangular Pipes<br/>
+      Angles (L Sections)<br/>
+      C Channels (U Sections)<br/>
+      MS Flats<br/>
+      Fencing Jali (MS Welded Wire Mesh)<br/>
+      Barbed Wire<br/><br/>
+
+      🔹 <strong>TATA MS Structural Sections</strong><br/>
+      Description: TATA Structural products are manufactured using advanced technology to ensure high load-bearing capacity, corrosion resistance, and dimensional accuracy. Trusted by architects and engineers alike, TATA MS structures are perfect for industrial and commercial applications.<br/>
+      Common Applications:<br/>
+      • Industrial sheds and warehouses<br/>
+      • Frame structures and trusses<br/>
+      • Fencing, railing, gates, and grills<br/>
+      • Roofing, fabrication, and base structures<br/>
+      • Agricultural boundary protection (Barbed Wire)<br/>
+      • Base plates, window grills, and fabrication (MS Flats)<br/>
+      Available Sizes:<br/>
+      • Round Pipes: 1/2" to 6" diameter<br/>
+      • Square Pipes: 25x25 mm to 150x150 mm<br/>
+      • Rectangular Pipes: 40x20 mm to 150x100 mm<br/>
+      • Angles: 25x25x3 mm to 100x100x10 mm<br/>
+      • Channels: 75x40 mm to 150x75 mm<br/>
+      • MS Flats: Width – 20 mm to 150 mm, Thickness – 3 mm to 12 mm<br/>
+      • Fencing Jali: 1 mm to 5 mm wire thickness, 25x25 mm to 100x100 mm mesh sizes<br/>
+      • Barbed Wire: 12 gauge, 14 gauge (Standard & Heavy Duty)<br/>
+      • Wall thickness: 1.2 mm to 6 mm<br/><br/>
+
+      🔹 <strong>APL Apollo MS Structural Sections</strong><br/>
+      Description: APL Apollo is renowned for its innovative range of structural steel tubes, angles, channels, flats, fencing solutions, and barbed wire. With high strength-to-weight ratio, excellent surface finish, and easy weldability, APL Apollo products are widely used in modern architecture and infrastructure.<br/>
+      Common Applications:<br/>
+      • Pre-engineered buildings (PEBs)<br/>
+      • Residential and commercial framing<br/>
+      • Infrastructure projects<br/>
+      • Fabrication, partitions, fencing, and boundary security<br/>
+      • Gates, supports, base structures, and metal furniture (MS Flats)<br/>
+      Available Sizes:<br/>
+      • Round Pipes: 1/2" to 8" diameter<br/>
+      • Square Pipes: 20x20 mm to 200x200 mm<br/>
+      • Rectangular Pipes: 40x20 mm to 250x150 mm<br/>
+      • Angles: 25x25x3 mm to 110x110x10 mm<br/>
+      • Channels: 75x40 mm to 200x75 mm<br/>
+      • MS Flats: Width – 20 mm to 200 mm, Thickness – 3 mm to 12 mm<br/>
+      • Fencing Jali: 1 mm to 6 mm wire thickness, various mesh options available<br/>
+      • Barbed Wire: 12 gauge, 14 gauge (ISI Marked)<br/>
+      • Wall thickness: 1.2 mm to 8 mm<br/><br/>
+
+      ✅ <strong>Why Buy MS Structures from Vishesh Build Mart?</strong><br/>
+      • Certified products from TATA Steel and APL Apollo<br/>
+      • Wide variety of pipes, angles, channels, flats, fencing jali, and barbed wire in multiple sizes<br/>
+      • Suitable for industrial, residential, agricultural, and commercial uses<br/>
+      • Custom lengths, cutting, and bulk supply available<br/>
+      • Reliable pricing and timely delivery
+      `,
       specifications: [
         'Material: Mild Steel',
         'Standard: IS 2062',
@@ -78,41 +255,50 @@ const ProductDetail = () => {
         'Corrosion resistant coating available',
         'Precision engineered',
         'Cost-effective solution'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
-
     // AC Sheets
     'ac-sheets': {
-      name: 'AC Sheets / GC Sheets',
-      brand: 'TATA',
+      name: 'AC & GC Roofing Sheets – Reliable Roofing for Every Structure',
+      brand: 'TATA & Everest',
       category: 'Roofing',
-      price: '₹450 per sheet',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
-      description: 'Asbestos Cement and Galvanized Corrugated sheets for roofing applications. Durable, weather-resistant, and cost-effective roofing solution.',
-      specifications: [
-        'Material: AC/GC Steel',
-        'Thickness: 0.5mm to 1.2mm',
-        'Length: 6ft to 12ft',
-        'Width: 3ft standard',
-        'Profile: Corrugated'
-      ],
-      features: [
-        'Weather resistant',
-        'Long lasting durability',
-        'Easy installation',
-        'Cost effective',
-        'Fire resistant'
-      ]
-    },
+      coverImage: cover,
+      image: [Acsheet, Acsheets, GCsheet, gcroofing],
+      description: `At Vishesh Build Mart, we offer a trusted collection of AC (Asbestos Cement) and GC (Galvanised Corrugated) roofing sheets from top industry brands TATA and Everest. Ideal for homes, factories, farmhouses, and industrial buildings, these roofing solutions provide sturdy, weather-resistant coverage.`,
 
+      specifications: [
+        'Available Brands: TATA, Everest',
+        'AC Roofing Sheet Sizes: 6 ft, 8 ft, 10 ft, 12 ft',
+        'AC Sheet Thickness: 6 mm, 8 mm',
+        'GC Roofing Sheet Sizes: 6 ft to 12 ft',
+        'GC Sheet Thickness: 0.25 mm to 0.63 mm'
+      ],
+
+      features: [
+        'Weather and fire resistant',
+        'Corrosion and rust-resistant (GC Sheets)',
+        'Sound and heat insulation (AC Sheets)',
+        'Lightweight yet durable',
+        'Cost-effective with long lifespan',
+        'Easy installation and low maintenance'
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
+    },
     // Waterproofing
     'waterproofing': {
       name: 'SBR Waterproofing Solution',
       brand: 'UltraTech',
       category: 'Waterproofing',
-      price: '₹120 per kg',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
-      description: 'Advanced Styrene Butadiene Rubber (SBR) based waterproofing solution for concrete structures, terraces, and basements.',
+      coverImage: waterprofing,
+      image: [waterprofing, water],
+      description: 'Advanced Styrene Butadiene Rubber (SBR) based waterproofing solution for concrete structures, terraces, and basements. Specially formulated for long-lasting protection, this product ensures superior sealing performance against water seepage, enhancing the durability and structural integrity of buildings. Ideal for residential, commercial, and industrial projects, it helps reduce long-term maintenance costs while adding value to your property.',
       specifications: [
         'Type: SBR Based',
         'Coverage: 1.5-2 kg per sq.m',
@@ -126,7 +312,11 @@ const ProductDetail = () => {
         'Crack bridging properties',
         'Non-toxic and eco-friendly',
         'Easy application'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Pipes
@@ -134,9 +324,9 @@ const ProductDetail = () => {
       name: 'CPVC & UPVC Pipes',
       brand: 'Supreme',
       category: 'Plumbing',
-      price: '₹85 per meter',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-      description: 'High-quality CPVC and UPVC pipes for hot and cold water supply, drainage, and plumbing applications.',
+      coverImage: Agricultre,
+      image: [CVPC, Nudrain, Nudrinaready, Plastic, Silbond, silaid, SWR, UPVC, Agricultre],
+      description: 'Supreme Plumbing & Drainage Solutions – Now Available at Vishesh Build Mart.<br> At Vishesh Build Mart, we bring you the trusted quality of Supreme Industries – India’s leading brand in piping systems.<br> Known for its innovation, durability, and performance, Supreme has been setting industry benchmarks for over 75 years.<br> Whether it\'s plumbing, drainage, or agricultural piping needs – Supreme products ensure long-lasting reliability, safety, and ease of installation.<br> 🚰 Plumbing Pipelines & Fittings – Reliable Flow, Long-Lasting Durability – Supreme by Your Side.<br> Explore our comprehensive range of Supreme plumbing products designed to meet modern water supply requirements with safety, strength, and efficiency.<br> 🔹 UPVC Pipes & Fittings – Ideal for potable cold water systems. Lightweight, chemical-resistant, and easy to install.<br> 🔹 CPVC Pipes & Fittings – Perfect for hot & cold water applications. High thermal resistance and long-lasting durability.<br> 🔹 Solvents & Lubricants – Supreme-approved joining solutions for leak-proof installations. Includes pipe adhesives, rubber lubricants, and more.<br> 💧 Drainage Pipelines & Fittings – Smooth Discharge. Strong Foundation. Ensure uninterrupted drainage flow with Supreme’s durable range for residential, commercial, and infrastructure projects.<br> 🔹 SWR Pipes & Fittings – Designed for soil, waste & rainwater drainage. Anti-odor, leak-proof and UV stabilized.<br> 🔹 Agriculture Pipes – Heavy-duty pipes for irrigation, field supply & rural water management. High pressure and weather-resistant.<br> 🔹 Readymade Chambers – Modular chambers for inspection and underground utility access. Easy to install, load-bearing and long service life.<br> 🔹 Nu-Drain Pipes – Advanced non-pressure underground drainage system. Suitable for municipal and residential sewage networks.<br>',
       specifications: [
         'Material: CPVC/UPVC',
         'Pressure Rating: 10-25 kg/cm²',
@@ -150,31 +340,42 @@ const ProductDetail = () => {
         'Easy installation',
         'Long service life',
         'Cost effective'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Faucets & Sanitaryware
     'faucets-sanitaryware': {
-      name: 'Premium Kitchen & Bath Faucets',
-      brand: 'Grohe',
-      category: 'Faucets',
-      price: '₹15,500',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop',
-      description: 'Premium German-engineered kitchen and bathroom faucets with innovative technology and elegant design. Features water-saving technology and lifetime warranty.',
+      name: 'Faucets & Sanitaryware – Elegant, Efficient & Enduring',
+      brand: 'Grohe, American Standard, Jaquar, Colstone, Hindware, Aries',
+      category: 'Faucets & Sanitaryware',
+      coverImage: faucet,
+      image: [faucet, tap, front, downld],
+      description: 'Premium faucets and sanitaryware combining style, durability, and hygiene. Curated from top brands for luxurious bathrooms, functional spaces, and budget-friendly remodels.',
       specifications: [
-        'Material: Chrome-plated brass',
-        'Installation: Single/Double hole',
-        'Spout Height: 240mm',
-        'Flow Rate: 5.7 L/min',
-        'Warranty: 5 years'
+        'Basin & sink mixers',
+        'Showers & shower panels',
+        'Health faucets',
+        'Wall-hung & floor-mounted toilets',
+        'Washbasins & vanities',
+        'Cisterns, flush plates & urinals',
+        'Bath accessories and fittings'
       ],
       features: [
-        'German engineering excellence',
-        'Water-saving technology',
-        'Durable chrome finish',
-        'Easy installation',
-        'Lifetime warranty on selected parts'
-      ]
+        'Elegant designs with premium finishes',
+        'Water-saving & eco-friendly technology',
+        'Durable and easy-clean surfaces',
+        'Wide range for all budget segments',
+        'Trusted global and Indian brands',
+        'Precision control and leak-proof performance'
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Water Tanks
@@ -182,8 +383,8 @@ const ProductDetail = () => {
       name: 'Plastic Water Storage Tanks',
       brand: 'Sintex',
       category: 'Water Storage',
-      price: '₹8,500',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      coverImage: [Cool],
+      image: [Cool, mini, Granite, Amrutam, Copper, Ecosil, Siltank, Weather],
       description: 'High-quality plastic water storage tanks for residential and commercial use. UV stabilized and food-grade quality material.',
       specifications: [
         'Capacity: 500L to 10,000L',
@@ -198,7 +399,11 @@ const ProductDetail = () => {
         '10-year warranty',
         'Leak-proof design',
         'Easy maintenance'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Water Treatment
@@ -206,8 +411,8 @@ const ProductDetail = () => {
       name: 'Water Treatment Systems',
       brand: 'Aqua Guard',
       category: 'Water Treatment',
-      price: '₹25,000',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      coverImage: watertreatment,
+      image: [watertreatment, watertr],
       description: 'Complete water treatment solutions including heat pumps, water softeners, and septic tank systems for clean and safe water.',
       specifications: [
         'Capacity: 100-1000 LPH',
@@ -222,7 +427,11 @@ const ProductDetail = () => {
         'Auto-flush system',
         'Digital display',
         'Low maintenance'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Tile Adhesives
@@ -230,8 +439,8 @@ const ProductDetail = () => {
       name: 'Premium Tile Adhesives',
       brand: 'UltraTech',
       category: 'Tile Adhesives',
-      price: '₹450 per bag (20kg)',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      image: [walladhesive, tiles, wallputy],
+      coverImage: walladhesive,
       description: 'High-performance tile adhesives for wall and floor tile installation. Available in various grades for different applications.',
       specifications: [
         'Grade: YT/NT/VT/CT',
@@ -246,7 +455,11 @@ const ProductDetail = () => {
         'Easy application',
         'Suitable for all tile types',
         'Weather resistant'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Paint
@@ -254,8 +467,8 @@ const ProductDetail = () => {
       name: 'Premium Wall Paint',
       brand: 'Birla Opus',
       category: 'Paint',
-      price: '₹320 per liter',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      coverImage: wallputy,
+      image: [acrylic, Assian, paint, wallputy],
       description: 'High-quality interior and exterior wall paints with excellent coverage, durability, and finish. Available in multiple colors and textures.',
       specifications: [
         'Type: Acrylic/Enamel',
@@ -270,7 +483,11 @@ const ProductDetail = () => {
         'Easy application',
         'Washable finish',
         'Environment friendly'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     },
 
     // Luxury & Wellness
@@ -278,9 +495,9 @@ const ProductDetail = () => {
       name: 'Luxury Bathroom Fixtures',
       brand: 'Jaquar',
       category: 'Luxury & Wellness',
-      price: '₹85,000',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop',
-      description: 'Premium luxury bathroom fixtures including bathtubs, whirlpool systems, steam systems, and spa equipment for ultimate relaxation.',
+      coverImage: [luzuzry],
+      image: [luzuzry, luxuryone, wellness],
+      description: 'Curated luxury bathroom & wellness range from Grohe, American Standard, Jaquar & Colstone — including bathtubs, whirlpools, steam cabins, spa beds, and smart digital showers. Designed for comfort, innovation, and elegant aesthetics.',
       specifications: [
         'Material: Acrylic/Fiberglass',
         'Capacity: 200-400 liters',
@@ -294,11 +511,15 @@ const ProductDetail = () => {
         'Digital controls',
         'Premium materials',
         'Energy efficient'
-      ]
+      ],
+      productType: {
+        image: [],
+        description: []
+      }
     }
   };
-
   const product = productData[productSlug as keyof typeof productData];
+  const loopImages = [...product.image, ...product.image];
 
   if (!product) {
     return (
@@ -312,7 +533,6 @@ const ProductDetail = () => {
       </div>
     );
   }
-
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -329,11 +549,11 @@ const ProductDetail = () => {
         {/* Product Details */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Product Image */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <img 
-              src={product.image} 
+          <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-96">
+            <img
+              src={product.coverImage}
               alt={product.name}
-              className="w-full h-96 object-cover rounded-lg"
+              className="w-full h-full object-contain rounded-lg"
             />
           </div>
 
@@ -342,8 +562,13 @@ const ProductDetail = () => {
             <div>
               <Badge className="mb-4">{product.brand}</Badge>
               <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
-              <p className="text-3xl font-bold text-orange-500 mb-6">{product.price}</p>
-              <p className="text-lg text-gray-600 leading-relaxed">{product.description}</p>
+              <p className="text-3xl font-bold text-orange-500 mb-6">
+                {product.price}
+              </p>
+              <p
+                className="text-lg text-gray-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: product.description }}
+              ></p>
             </div>
 
             {/* Contact Buttons */}
@@ -365,6 +590,22 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Image Carousel Card */}
+        <Card className="overflow-x-auto no-scrollbar whitespace-nowrap p-4 mb-12">
+          <div className="overflow-hidden no-scrollbar w-full bg-gray-100">
+            <div className="scroll-loop">
+              {loopImages.map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt=""
+                  className="h-48 w-auto mx-4 flex-shrink-0 rounded-lg"
+                />
+              ))}
+            </div>
+          </div>
+        </Card> 
 
         {/* Specifications and Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -401,10 +642,36 @@ const ProductDetail = () => {
               </ul>
             </CardContent>
           </Card>
-        </div>
+       </div>
+
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Sub-Product:</CardTitle>
+          </CardHeader>
+          </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {product?.productType?.map((subProduct, index) => (
+    <Card key={index} className="flex items-center space-x-4 p-4">
+      {/* Image on the left */}
+      <img
+        src={subProduct.image[0]}
+        alt={`Sub Product ${index + 1}`}
+        className="w-40 h-40 object-cover rounded-lg shadow-md border"
+      />
+
+      {/* Text on the right, vertically centered */}
+      <span className="text-sm text-gray-700 self-center">
+        {subProduct.description}
+      </span>
+    </Card>
+  ))}
+</div>
+
       </div>
     </div>
   );
+
 };
 
 export default ProductDetail;

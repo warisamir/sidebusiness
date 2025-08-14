@@ -5,7 +5,16 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Award, Building, Star, MapPin } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
-import cementLogo from "../assets/Cement/download.png";
+import cementLogo from "../../public/assets/Cement/CoverImagf.png";
+import tata from '../../public/assets/logos/tata.jpg';
+import aplapollo from '../../public/assets/logos/Aplapollo.jpg';
+import kamdhenu from '../../public/assets/logos/kamdhenu.jpg';
+import grohe from '../../public/assets/logos/download.png';
+import AmericanStandard from '../../public/assets/logos/American standard.png';
+import jaguar from '../../public/assets/logos/jaguar.webp';
+import supreme from '../../public/assets/logos/supreme.png';
+import sintex from '../../public/assets/logos/sintex.jpg';
+import birla from '../../public/assets/logos/birla.jpg';
 const Home = () => {
   const whyChooseUs = [
     {
@@ -43,16 +52,16 @@ const Home = () => {
     { name: "Birla Opus", slug: "birla-opus" }
   ];
   const brandLogos = [
-    { name: "UltraTech", img: "/logos/ultratech.png", slug: "ultratech" },
-    { name: "TATA", img: "/logos/tata.png", slug: "tata" },
-    { name: "APL Apollo", img: "/logos/apl-apollo.png", slug: "apl-apollo" },
-    { name: "Kamdhenu", img: "/logos/kamdhenu.png", slug: "kamdhenu" },
-    { name: "Grohe", img: "/logos/grohe.png", slug: "grohe" },
-    { name: "American Standard", img: "/logos/american-standard.png", slug: "american-standard" },
-    { name: "Jaquar", img: "/logos/jaquar.png", slug: "jaquar" },
-    { name: "Supreme", img: "/logos/supreme.png", slug: "supreme" },
-    { name: "Sintex", img: "/logos/sintex.png", slug: "sintex" },
-    { name: "Birla Opus", img: "/logos/birla-opus.png", slug: "birla-opus" }
+    { name: "UltraTech",img: cementLogo, slug: "ultratech" },
+    { name: "TATA", img:tata, slug: "tata" },
+    { name: "APL Apollo", img: aplapollo, slug: "apl-apollo" },
+    { name: "Kamdhenu", img: kamdhenu, slug: "kamdhenu" },
+    { name: "Grohe", img: grohe, slug: "grohe" },
+    { name: "American Standard", img: AmericanStandard, slug: "american-standard" },
+    { name: "Jaquar", img: jaguar, slug: "jaquar" },
+    { name: "Supreme", img: supreme, slug: "supreme" },
+    { name: "Sintex", img: sintex, slug: "sintex" },
+    { name: "Birla Opus", img: birla, slug: "birla-opus" }
   ];
 
 
@@ -126,14 +135,7 @@ const Home = () => {
               {/* Repeat the logos twice for smooth infinite loop */}
               {[...Array(2)].map((_, i) => (
                 <div key={i} className="flex gap-16">
-                  {[
-                    { name: "UltraTech", img: "/assets/logos/ultratech.png", slug: "ultratech" }, // Local (in public/assets/logos)
-                    { name: "TATA", img: "https://upload.wikimedia.org/wikipedia/commons/6/64/Tata_logo.svg", slug: "tata" },
-                    { name: "APL Apollo", img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apollo_Steel_Tubes_logo.png", slug: "apl-apollo" },
-                    { name: "Kamdhenu", img: "https://kamdhenuwebsite.blob.core.windows.net/kamdhenuwebsite/Kamdhenu-Logo.png", slug: "kamdhenu" },
-                    { name: "Grohe", img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Grohe_logo.svg", slug: "grohe" },
-                    { name: "Jaquar", img: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jaquar_logo.svg", slug: "jaquar" }
-                  ].map((brand, idx) => (
+                  {brandLogos.map((brand, idx) => (
                     <a
                       key={`${brand.name}-${i}-${idx}`}
                       href={`/brands/${brand.slug}`}

@@ -3,116 +3,126 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart } from 'lucide-react';
-
+import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart, LucideX } from 'lucide-react';
+import Cover from '../../public/assets/Cement/CoverImagf.png';
+//second
+import rebar from '../../public/assets/tmt/rebardcover.webp';
+//msccover
+import mscCover from '../../public/assets/msstructure/cover.jpg';
+//acsheet 
+import cover from '../../public/assets/sheet/cover.jpg';
+//pipes
+import Agricultre from '../../public/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+//waterproofing
+import waterprofing from '../../public/assets/waterprofing/Coverpage.webp';
+//download
+import downld from '../../public/assets/faucet/download.png';
+// watertank 
+import Cool from '../../public/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+//waterteeatment
+import waterTreatment from '../../public/assets/waterTreatment/image.png';//
+//tiles 
+import walladhesive from '../../public/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
+//paint&putty
+import acrylic from '../../public/assets/paint&putty/acrylic.jpg';
+//luxuxry 
+import luzuzry from '../../public/assets/luxury/wellness.jpg'
 const Products = () => {
   const allProducts = [
     {
-      name: "OPC 43 Grade Cement",
+      name: "Ultratech Cement",
       brand: "UltraTech",
       category: "Structural Materials",
-      price: "₹350/bag",
       slug: "cement",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
+      image: Cover,
       description: "High-quality Ordinary Portland Cement for general construction work with excellent strength and durability."
     },
     {
       name: "TMT Rebars Fe 415",
       brand: "APL Apollo",
       category: "Structural Materials", 
-      price: "₹58,000/MT",
       slug: "tmt-rebars",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: rebar,
       description: "Thermo-Mechanically Treated rebars with superior strength, ductility, and corrosion resistance."
     },
     {
       name: "MS Structural Steel",
       brand: "TATA",
       category: "Structural Materials",
-      price: "₹55,000/MT", 
       slug: "ms-structures",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: mscCover,
       description: "High-quality Mild Steel structural angles and pipes for construction frameworks and supports."
     },
     {
       name: "AC/GC Roofing Sheets",
       brand: "TATA",
       category: "Roofing & Waterproofing",
-      price: "₹450/sheet",
       slug: "ac-sheets", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
+      image: cover,
       description: "Durable, weather-resistant roofing sheets for residential and commercial applications."
     },
     {
       name: "SBR Waterproofing",
       brand: "UltraTech",
       category: "Roofing & Waterproofing",
-      price: "₹120/kg",
       slug: "waterproofing",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop", 
+      image: waterprofing, 
       description: "Advanced waterproofing solution for concrete structures, terraces, and basements."
     },
     {
       name: "CPVC & UPVC Pipes",
       brand: "Supreme",
       category: "Plumbing Solutions",
-      price: "₹85/meter",
       slug: "pipes",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: Agricultre,
       description: "High-quality pipes for hot and cold water supply, drainage, and plumbing applications."
     },
     {
       name: "Premium Faucets",
       brand: "Grohe", 
       category: "Plumbing Solutions",
-      price: "₹15,500",
       slug: "faucets-sanitaryware",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
+      image: downld,
       description: "German-engineered kitchen and bathroom faucets with innovative technology and elegant design."
     },
     {
       name: "Water Storage Tanks",
       brand: "Sintex",
       category: "Water Solutions", 
-      price: "₹8,500",
       slug: "water-tanks",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
+      image: Cool,
       description: "UV stabilized plastic water storage tanks for residential and commercial use."
     },
     {
       name: "Water Treatment Systems",
       brand: "Aqua Guard",
       category: "Water Solutions",
-      price: "₹25,000", 
       slug: "water-treatment",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
-      description: "Complete water treatment solutions including RO, UV, and UF purification systems."
+      image: waterTreatment,
+      description: "Soft, clean & pressurized water with 3M filters, Havells heat pumps, and high-performance pressure pumps. Ideal for homes, hotels & commercial spaces."
     },
     {
       name: "Tile Adhesives",
       brand: "UltraTech",
       category: "Finishing Materials",
-      price: "₹450/bag",
       slug: "tile-adhesives",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop", 
+      image: walladhesive, 
       description: "High-performance tile adhesives for wall and floor tile installation in various grades."
     },
     {
       name: "Premium Wall Paint",
       brand: "Birla Opus",
       category: "Finishing Materials",
-      price: "₹320/liter",
       slug: "paint",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
-      description: "High-quality interior and exterior wall paints with excellent coverage and durability."
+      image: acrylic,
+      description: "Birla Opus paints & Birla White putty for smooth, vibrant, and long-lasting walls. Excellent coverage, weather resistance, low VOC, strong bonding, and flake-free finish."
     },
     {
       name: "Luxury Bathroom Fixtures", 
       brand: "Jaquar",
       category: "Finishing Materials",
-      price: "₹85,000",
       slug: "luxury-wellness",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
+      image: luzuzry,
       description: "Premium luxury bathroom fixtures including bathtubs, whirlpool systems, and spa equipment."
     }
   ];
