@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  build: {
+    rollupOptions: {
+      external: ['fs', 'path', 'os'], // add the modules Vite complains about
+    }},
   server: {
     host: "::",
     port: 8080,
