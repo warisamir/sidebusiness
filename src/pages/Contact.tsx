@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Phone, Mail, MapPin, Clock, Building } from 'lucide-react';
-
+import StoreLocation from '@/assets/location/storelocation.png';
+import storeLocation from '@/assets/location/storelocation.png';
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -149,7 +150,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/assets/location/storelocation.png"
+                    src={storeLocation}
                     alt="Company Location"
                     className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition"
                   />

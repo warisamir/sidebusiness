@@ -5,17 +5,20 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Award, Building, Star, MapPin } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
-import cement from '../pages/assets/Cement/coverimage.png';
-import tata from '../pages/assets/logos/tata.jpg';
-import aplapollo from '../pages/assets/logos/Aplapollo.jpg';
-import kamdhenu from '../pages/assets/logos/kamdhenu.jpg';
-import grohe from '../pages/assets/logos/download.png';
-import AmericanStandard from '../pages/assets/logos/American standard.png';
-import jaguar from '../pages/assets/logos/jaguar.webp';
-import supreme from '../pages/assets/logos/supreme.png';
-import sintex from '../pages/assets/logos/sintex.jpg';
-import birla from '../pages/assets/logos/birla.jpg';
-
+import cement from '@/assets/logos/Ultratech.png';
+import tata from '@/assets/logos/Tata Steel.png';
+import aplapollo from '@/assets/logos/APL APOLLO.png';
+import kamdhenu from '@/assets/logos/kamdhenu-steel.jpg';
+import grohe from '@/assets/logos/Grohe.png';
+import AmericanStandard from '@/assets/logos/American-Standard.png';
+import jaguar from '@/assets/logos/Jaquar.png';
+import supreme from '@/assets/logos/Supreme.jpg';
+import sintex from '@/assets/logos/Sintex.png';
+import birla from '@/assets/logos/Birla Opus Logo.png';
+import Everest from '@/assets/logos/Everest roofing sheets.jpg';
+import Woven from '@/assets/logos/WovenGold.png';
+import vectus from '@/assets/logos/Vectus-Logo-.webp';
+import msp from '@/assets/logos/MSP.png';
 const Home = () => {
   const whyChooseUs = [
     {
@@ -62,7 +65,11 @@ const Home = () => {
     { name: "Jaquar", img: jaguar, slug: "jaquar" },
     { name: "Supreme", img: supreme, slug: "supreme" },
     { name: "Sintex", img: sintex, slug: "sintex" },
-    { name: "Birla Opus", img: birla, slug: "birla-opus" }
+    { name: "Birla Opus", img: birla, slug: "birla-opus" },
+    { name: "vectus", img: vectus, slug: "vectus" },
+    { name: "everest", img: Everest, slug: "everest" },
+    { name: "woven", img: Woven, slug: "woven" },
+    { name: "map", img: msp, slug: "map" }
   ];
 
 

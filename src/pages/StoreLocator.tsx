@@ -2,6 +2,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import storeLocation from '@/assets/location/storelocation.png';
 const StoreLocator = () => {
   const locations = [
     {
@@ -137,7 +138,7 @@ const StoreLocator = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="/assets/location/storelocation.png"
+                      src={storeLocation}
                       alt="Company Location"
                       className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition"
                     />

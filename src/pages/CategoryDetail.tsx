@@ -16,9 +16,9 @@ const CategoryDetail = () => {
         {
           name: 'UltraTech',
           products: [
-            { name: 'OPC 43 Grade', slug: 'cement', price: '₹350/bag' },
-            { name: 'OPC 53 Grade', slug: 'cement', price: '₹375/bag' },
-            { name: 'PPC Cement', slug: 'cement', price: '₹340/bag' }
+            { name: 'OPC 43 Grade', slug: 'cement', price: '₹350/bag', image: [] },
+            { name: 'OPC 53 Grade', slug: 'cement', price: '₹375/bag', image: [] },
+            { name: 'PPC Cement', slug: 'cement', price: '₹340/bag', image: [] }
           ],
           description: 'Leading cement manufacturer in India with superior quality products'
         }
@@ -31,18 +31,18 @@ const CategoryDetail = () => {
         {
           name: 'APL Apollo',
           products: [
-            { name: 'Fe 415 Grade', slug: 'tmt-rebars', price: '₹58,000/MT' },
-            { name: 'Fe 500 Grade', slug: 'tmt-rebars', price: '₹60,000/MT' },
-            { name: 'Fe 550 Grade', slug: 'tmt-rebars', price: '₹62,000/MT' }
+            { name: 'Fe 415 Grade', slug: 'tmt-rebars', price: '₹58,000/MT', image: [] },
+            { name: 'Fe 500 Grade', slug: 'tmt-rebars', price: '₹60,000/MT', image: [] },
+            { name: 'Fe 550 Grade', slug: 'tmt-rebars', price: '₹62,000/MT', image: [] }
           ],
           description: 'Premium quality TMT rebars with excellent corrosion resistance'
         },
         {
           name: 'Kamdhenu',
           products: [
-            { name: 'NXT Grade', slug: 'tmt-rebars', price: '₹57,500/MT' },
-            { name: 'CRS Grade', slug: 'tmt-rebars', price: '₹59,000/MT' },
-            { name: 'QST Grade', slug: 'tmt-rebars', price: '₹61,000/MT' }
+            { name: 'NXT Grade', slug: 'tmt-rebars', price: '₹57,500/MT', image: [] },
+            { name: 'CRS Grade', slug: 'tmt-rebars', price: '₹59,000/MT', image: [] },
+            { name: 'QST Grade', slug: 'tmt-rebars', price: '₹61,000/MT', image: [] }
           ],
           description: 'Innovative TMT rebars with superior bendability and strength'
         }
@@ -55,18 +55,18 @@ const CategoryDetail = () => {
         {
           name: 'Grohe',
           products: [
-            { name: 'Kitchen Faucets', slug: 'faucets-sanitaryware', price: '₹15,500' },
-            { name: 'Bathroom Faucets', slug: 'faucets-sanitaryware', price: '₹12,000' },
-            { name: 'Shower Systems', slug: 'faucets-sanitaryware', price: '₹25,000' }
+            { name: 'Kitchen Faucets', slug: 'faucets-sanitaryware', price: '₹15,500', image: [] },
+            { name: 'Bathroom Faucets', slug: 'faucets-sanitaryware', price: '₹12,000', image: [] },
+            { name: 'Shower Systems', slug: 'faucets-sanitaryware', price: '₹25,000', image: [] }
           ],
           description: 'German engineering excellence in water technology'
         },
         {
           name: 'American Standard',
           products: [
-            { name: 'Toilets', slug: 'faucets-sanitaryware', price: '₹18,000' },
-            { name: 'Washbasins', slug: 'faucets-sanitaryware', price: '₹8,500' },
-            { name: 'Bathtubs', slug: 'faucets-sanitaryware', price: '₹45,000' }
+            { name: 'Toilets', slug: 'faucets-sanitaryware', price: '₹18,000', image: [] },
+            { name: 'Washbasins', slug: 'faucets-sanitaryware', price: '₹8,500', image: [] },
+            { name: 'Bathtubs', slug: 'faucets-sanitaryware', price: '₹45,000', image: [] }
           ],
           description: 'Innovative bathroom solutions with superior design'
         }
@@ -79,23 +79,23 @@ const CategoryDetail = () => {
         {
           name: 'UltraTech',
           products: [
-            { name: 'OPC 43 Grade Cement', slug: 'cement', price: '₹350/bag' },
-            { name: 'OPC 53 Grade Cement', slug: 'cement', price: '₹375/bag' }
+            { name: 'OPC 43 Grade Cement', slug: 'cement', price: '₹350/bag', image: [] },
+            { name: 'OPC 53 Grade Cement', slug: 'cement', price: '₹375/bag', image: [] }
           ],
           description: 'Leading cement manufacturer in India with superior quality products'
         },
         {
           name: 'APL Apollo',
           products: [
-            { name: 'TMT Rebars Fe 415', slug: 'tmt-rebars', price: '₹58,000/MT' },
-            { name: 'TMT Rebars Fe 500', slug: 'tmt-rebars', price: '₹60,000/MT' }
+            { name: 'TMT Rebars Fe 415', slug: 'tmt-rebars', price: '₹58,000/MT', image: [] },
+            { name: 'TMT Rebars Fe 500', slug: 'tmt-rebars', price: '₹60,000/MT', image: [] }
           ],
           description: 'Premium quality TMT rebars with excellent corrosion resistance'
         },
         {
           name: 'TATA',
           products: [
-            { name: 'MS Structural Steel', slug: 'ms-structures', price: '₹55,000/MT' }
+            { name: 'MS Structural Steel', slug: 'ms-structures', price: '₹55,000/MT', image: [] }
           ],
           description: 'High-quality structural steel for construction frameworks'
         }
@@ -108,14 +108,14 @@ const CategoryDetail = () => {
         {
           name: 'TATA',
           products: [
-            { name: 'AC/GC Roofing Sheets', slug: 'ac-sheets', price: '₹450/sheet' }
+            { name: 'AC/GC Roofing Sheets', slug: 'ac-sheets', price: '₹450/sheet', image: [] }
           ],
           description: 'Durable, weather-resistant roofing sheets'
         },
         {
           name: 'UltraTech',
           products: [
-            { name: 'SBR Waterproofing', slug: 'waterproofing', price: '₹120/kg' }
+            { name: 'SBR Waterproofing', slug: 'waterproofing', price: '₹120/kg', image: [] }
           ],
           description: 'Advanced waterproofing solution for concrete structures'
         }
@@ -128,14 +128,14 @@ const CategoryDetail = () => {
         {
           name: 'Supreme',
           products: [
-            { name: 'CPVC & UPVC Pipes', slug: 'pipes', price: '₹85/meter' }
+            { name: 'CPVC & UPVC Pipes', slug: 'pipes', price: '₹85/meter', image: [] }
           ],
           description: 'High-quality pipes for plumbing applications'
         },
         {
           name: 'Grohe',
           products: [
-            { name: 'Premium Faucets', slug: 'faucets-sanitaryware', price: '₹15,500' }
+            { name: 'Premium Faucets', slug: 'faucets-sanitaryware', price: '₹15,500', image: [] }
           ],
           description: 'German-engineered faucets with innovative technology'
         }
@@ -148,14 +148,14 @@ const CategoryDetail = () => {
         {
           name: 'Sintex',
           products: [
-            { name: 'Water Storage Tanks', slug: 'water-tanks', price: '₹8,500' }
+            { name: 'Water Storage Tanks', slug: 'water-tanks', price: '₹8,500', image: [] }
           ],
           description: 'UV stabilized plastic water storage tanks'
         },
         {
           name: 'Aqua Guard',
           products: [
-            { name: 'Water Treatment Systems', slug: 'water-treatment', price: '₹25,000' }
+            { name: 'Water Treatment Systems', slug: 'water-treatment', price: '₹25,000', image: [] }
           ],
           description: 'Complete water treatment solutions including RO, UV, and UF'
         }
@@ -168,21 +168,22 @@ const CategoryDetail = () => {
         {
           name: 'UltraTech',
           products: [
-            { name: 'Tile Adhesives', slug: 'tile-adhesives', price: '₹450/bag' }
+            { name: 'Tile Adhesives', slug: 'tile-adhesives', price: '₹450/bag', image: [] }
+
           ],
           description: 'High-performance tile adhesives for various grades'
         },
         {
           name: 'Birla Opus',
           products: [
-            { name: 'Premium Wall Paint', slug: 'paint', price: '₹320/liter' }
+            { name: 'Premium Wall Paint', slug: 'paint', price: '₹320/liter', image: [] }
           ],
           description: 'High-quality interior and exterior wall paints'
         },
         {
           name: 'Jaquar',
           products: [
-            { name: 'Luxury Bathroom Fixtures', slug: 'luxury-wellness', price: '₹85,000' }
+            { name: 'Luxury Bathroom Fixtures', slug: 'luxury-wellness', price: '₹85,000', image: [] }
           ],
           description: 'Premium luxury bathroom fixtures and spa equipment'
         }
@@ -267,6 +268,11 @@ const CategoryDetail = () => {
                 {brand.products.map((product, productIndex) => (
                   <Card key={productIndex} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
+                      <img
+                        // src={product.image}
+                        alt={product.name}
+                        className="w-full h-40 object-cover rounded-md mb-4"
+                      />
                       <CardTitle className="text-lg">{product.name}</CardTitle>
                       <p className="text-2xl font-bold text-orange-500">{product.price}</p>
                     </CardHeader>
@@ -289,6 +295,7 @@ const CategoryDetail = () => {
                       </div>
                     </CardContent>
                   </Card>
+
                 ))}
               </div>
             </div>

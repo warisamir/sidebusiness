@@ -4,29 +4,32 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart, LucideX } from 'lucide-react';
-import Cover from '../pages/assets/Cement/coverimage.png';
+import Cover from '@/assets/Products/Ultratec Cement.png';
 //second
-import rebar from '../pages/assets/tmt/rebardcover.webp';
+import rebar from '@/assets/tmt/rebardcover.webp';
 //msccover
-import mscCover from '../pages/assets/msstructure/cover.jpg';
+import mscCover from '@/assets/Products/MS Structures.jpg';
 //acsheet 
-import cover from '../pages/assets/sheet/cover.jpg';
+import cover from '@/assets/Products/AC & GC Roofing sheets.jpg';
 //pipes
-import Agricultre from '../pages/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+import Agricultre from '@/assets/Products/Plumbing Pipeline & Fittings.png';
 //waterproofing
-import waterprofing from '../pages/assets/waterprofing/Coverpage.webp';
+import waterprofing from '@/assets/waterprofing/Coverpage.webp';
 //download
-import downld from '../pages/assets/faucet/download.png';
+import downld from '@/assets/Products/Faucet & Sanitarywares.jpg';
 // watertank 
-import Cool from '../pages/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+import Cool from '@/assets/Products/Water Tanks.jpg';
 //waterteeatment
-import waterTreatment from '../pages/assets/waterTreatment/image.png';//
+import waterTreatment from '@/assets/Products/Water Solutions.png';
 //tiles 
-import walladhesive from '../pages/assets/tiles-adhesive/astral-trubuild-ta-220-plus-tiles-adhesive-20-kh-2224154387-2vddlvfy.avif';
+import walladhesive from '@/assets/tiles-adhesive/astral.avif';
 //paint&putty
-import acrylic from '../pages/assets/paint&putty/acrylic.jpg';
+import acrylic from '@/assets/Products/Paints.jpg';
 //luxuxry 
-import luzuzry from '../pages/assets/luxury/wellness.jpg'
+import luzuzry from '@/assets/Products/Luxury & Wellness.jpg';
+//mirror
+import Mirror from '@/assets/mirror/mirror3.png';
+
 const Products = () => {
   const allProducts = [
     {
@@ -94,10 +97,10 @@ const Products = () => {
       description: "UV stabilized plastic water storage tanks for residential and commercial use."
     },
     {
-      name: "Water Treatment Systems",
+      name: "Water Solution",
       brand: "Aqua Guard",
-      category: "Water Solutions",
-      slug: "water-treatment",
+      category: "Water Solution",
+      slug: "water-Solution",
       image: waterTreatment,
       description: "Soft, clean & pressurized water with 3M filters, Havells heat pumps, and high-performance pressure pumps. Ideal for homes, hotels & commercial spaces."
     },
@@ -121,9 +124,17 @@ const Products = () => {
       name: "Luxury Bathroom Fixtures", 
       brand: "Jaquar",
       category: "Finishing Materials",
-      slug: "luxury-wellness",
+      slug: 'luxury-wellness',
       image: luzuzry,
       description: "Premium luxury bathroom fixtures including bathtubs, whirlpool systems, and spa equipment."
+    },
+    {
+      name: "Mirrors",
+      brand: "Designer LED Mirrors and Customized Mirror Solutions from Glazonoid",
+      category: "Mirror",
+      slug: 'Mirror',
+      image: Mirror,
+      description: "Designed to enhance modern homes, luxury bathrooms, vanity areas, salons, and commercial interiors, Glazonoid mirrors blend aesthetics with smart features."
     }
   ];
 
@@ -181,7 +192,7 @@ const Products = () => {
                 <Badge className="w-fit mb-2" variant="secondary">{product.brand}</Badge>
                 <CardTitle className="text-lg leading-tight">{product.name}</CardTitle>
                 <p className="text-sm text-gray-600">{product.category}</p>
-                <p className="text-xl font-bold text-orange-500">{product.price}</p>
+                <p className="text-xl font-bold text-orange-500">{ }</p>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-3">{product.description}</p>
