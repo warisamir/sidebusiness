@@ -198,7 +198,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <BrandsTable/>
 
     </div>
   );

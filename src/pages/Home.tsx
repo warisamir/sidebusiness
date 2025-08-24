@@ -11,7 +11,7 @@ import aplapollo from '@/assets/logos/APL APOLLO.png';
 import kamdhenu from '@/assets/logos/kamdhenu-steel.jpg';
 import grohe from '@/assets/logos/Grohe.png';
 import AmericanStandard from '@/assets/logos/American-Standard.png';
-import jaguar from '@/assets/logos/Jaquar.png';
+import jaguar from '@/assets/logos/Jaquar-removebg-preview.png';
 import supreme from '@/assets/logos/Supreme.jpg';
 import sintex from '@/assets/logos/Sintex.png';
 import birla from '@/assets/logos/Birla Opus Logo.png';
@@ -224,7 +224,7 @@ const Home = () => {
             <Button asChild size="lg" variant="secondary" className="bg-white text-orange-500 hover:bg-gray-100">
               <Link to="/store-locator">Find Store</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-500">
+            <Button asChild size="lg" variant="outline" className="border-white text-orange-500 hover:bg-orange-500">
               <Link to="/quote">Get Custom Quote</Link>
             </Button>
           </div>

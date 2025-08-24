@@ -18,7 +18,7 @@ import rebar from '@/assets/tmt/rebardcover.webp';
 //msstructure 
 import barbed from '@/assets/msstructure/Barbed Wire.avif';
 import c2 from '@/assets/msstructure/c2.jpg';
-import fencing from '@/assets/msstructure/Fencing wire application image.jpg';
+import fencing from '@/assets/msstructure/MSCoverImage.png';
 import mschanel from '@/assets/msstructure/MS channel.jpg';
 import MSFLat from '@/assets/msstructure/MS FLATS.webp';
 import Msround from '@/assets/msstructure/MS Round Pipe.webp';
@@ -97,20 +97,33 @@ const ProductDetail = () => {
       category: 'Cement',
       coverImage: Cover,
       image: [Cement, download, PPC, PSC, Cement, download], //'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
-      description: 'High-quality Ordinary Portland Cement (OPC) 43 Grade is ideal for general construction work. This cement provides excellent strength and durability for residential and commercial buildings.',
+      description: ` <strong>Ultratech Cement – Build Stronger, Smarter, Safer</strong><br/>
+    At Vishesh Build Mart, we bring you Ultratech Cement, India’s No. 1 cement brand known for its unmatched quality and consistency. Whether you’re building your dream home or managing a large-scale construction project, Ultratech ensures the strength, durability, and finish your structure deserves.
+    <br/><br/>
+    <strong>Why Choose Ultratech Cement?</strong><br/>
+    • High Compressive Strength: Trusted for withstanding heavy loads – perfect for foundations, slabs, beams, and columns.<br/>
+    • Uniform Particle Size: Delivers a smooth finish and better workability.<br/>
+    • Low Heat of Hydration: Ideal for mass concreting and large pours with reduced cracking risk.<br/>
+    • Moisture-Resistant Packaging: Ensures long shelf life and ease of handling.<br/>
+    • Eco-Friendly & Sustainable: GreenPro certified and committed to low carbon footprint manufacturing.
+    <br/><br/>
+    <strong>Need Help Choosing the Right Cement?</strong><br/>
+    Talk to our experts at Vishesh Build Mart or drop by our store. We're here to guide you every step of the way – from product selection to delivery.
+    <br/><br/>
+    Build with Trust. Build with Ultratech. Available now at Vishesh Build Mart.
+ `, 
       specifications: [
-        'Grade: 43',
-        'Weight: 50kg per bag',
-        'Compressive Strength: 43 MPa',
-        'Setting Time: 30 minutes initial, 600 minutes final',
-        'Fineness: 225 m²/kg minimum'
+        "Assured original product",
+        "Competitive pricing",
+        "On-time delivery",
+        "Expert construction advice",
+        "Bulk quantity available for projects"
       ],
       features: [
-        'Superior quality and consistency',
-        'Excellent workability',
-        'High durability',
-        'Suitable for all weather conditions',
-        'Environment friendly'
+        "Residential and commercial buildings ",
+        "Roads, bridges, and infrastructure projects",
+        "RCC work, plastering, and precast items",
+        "Interior and exterior construction"
       ],
       productType: [
         {
@@ -137,17 +150,21 @@ const ProductDetail = () => {
     // TMT Rebars Products
     'tmt-rebars': {
       name: 'TMT Rebars ',
-      brand: 'APL Apollo',
+      brand: '',
       category: 'TMT Rebars',
-      coverImage: rebar,
+      coverImage: Apiapollo,
       image: [Apiapollo, Kamdhenu, MST, shristi],
-      description: `We offer top-quality TMT bars from trusted brands that deliver unmatched strength, flexibility, and performance for all your construction needs. Explore our available brands, sizes, and product visuals below:`,
+      description: `We offer top-quality TMT bars from trusted brands that deliver unmatched strength, flexibility, and performance for all your construction needs. Explore our available brands, 
+      sizes, and product visuals below:
+      <br>
+      📞 Contact us today to place your order or get a custom quote.
+      <br>
+     📍 Visit our store or call for more details.`,
       specifications: [
-        'Grade: Fe 415',
-        'Yield Strength: 415 N/mm²',
-        'Elongation: 14.5% minimum',
-        'Sizes: 8mm to 32mm',
-        'Length: 12 meters standard'
+        "All brands are BIS - certified and trusted across India",
+        "Competitive prices on both retail and bulk orders",
+        "Fast delivery to your site",
+        "Friendly and expert guidance for choosing the right product"
       ],
       features: [
         'High strength and ductility',
@@ -159,7 +176,7 @@ const ProductDetail = () => {
       productType: [
         {
           image: [Apiapollo],
-          name: "ApiApollo",
+          name: "AplApollo",
           description: `Known for excellent tensile strength and corrosion resistance, 
     APL Apollo TMT bars are ideal for both residential and commercial structures.
     Available Sizes:
@@ -183,8 +200,8 @@ const ProductDetail = () => {
     25 mm`
         },
         {
-          image: [MST], name: "MST",
-          description: `MST TMT bars are designed for maximum tensile strength and long-lasting durability, perfect for heavy construction projects.
+          image: [MST], name: "MSP TMT BARS",
+          description: ` MSP bars offer a great mix of strength and flexibility, making them ideal for load-bearing columns, beams, and slabs.
     Available Sizes:
     8 mm
     10 mm
@@ -194,8 +211,8 @@ const ProductDetail = () => {
     25 mm`
         },
         {
-          image: [shristi], name: "TMT",
-          description: `Shristi TMT bars provide excellent corrosion resistance and reliable structural performance in all climates.
+          image: [shristi], name: "Shristi TMT BARS",
+          description: ` Shrishti TMT bars are cost-effective and durable, perfect for general construction and residential projects.
     Available Sizes:
     8 mm
     10 mm
@@ -213,26 +230,26 @@ const ProductDetail = () => {
       category: 'MS Structures',
       coverImage: fencing,
       image: [barbed, fencing, c2, fencing, msrect, msstruct, mainangle, MSFLat, Msround, mschanel, msquare],
-      description: `TATA & APL Apollo | Available at Vishesh Build Mart
-        At Vishesh Build Mart, we offer a premium range of MS Structural Pipes, Angles, Channels,
-        Flats, Fencing Jali, and Barbed Wire from industry leaders TATA Steel and APL Apollo. 
-        These structural materials are known for their superior strength, durability, and precision, 
-        making them ideal for a wide range of industrial, residential, and fabrication needs.
-        We offer MS structural materials in multiple shapes to suit your project requirements:
-        Round Pipes
-        Square Pipes
-        Rectangular Pipes
-        Angles (L Sections)
-        C Channels (U Sections)
-        MS Flats
-        Fencing Jali (MS Welded Wire Mesh)
-        Barbed Wire`,
+      description: `<strong>MS Structural Sections – Strength in Every Shape</strong><br/>
+    <strong>TATA & APL Apollo | Available at Vishesh Build Mart</strong><br/><br/>
+    At Vishesh Build Mart, we offer a premium range of MS Structural Pipes, Angles, Channels, Flats, Fencing Jali, and Barbed Wire from industry leaders TATA Steel and APL Apollo. These structural materials are known for their superior strength, durability, and precision, making them ideal for a wide range of industrial, residential, and fabrication needs.
+    <br/><br/>
+    <strong>🔹 Available Shapes & Categories</strong><br/>
+    We offer MS structural materials in multiple shapes to suit your project requirements:<br/>
+    • Round Pipes<br/>
+    • Square Pipes<br/>
+    • Rectangular Pipes<br/>
+    • Angles (L Sections)<br/>
+    • C Channels (U Sections)<br/>
+    • MS Flats<br/>
+    • Fencing Jali (MS Welded Wire Mesh)<br/>
+    • Barbed Wire`,
       specifications: [
-        'Material: Mild Steel',
-        'Standard: IS 2062',
-        'Sizes: Various angles and pipe diameters',
-        'Length: 6-12 meters',
-        'Finish: Hot rolled'
+        "Certified products from TATA Steel and APL Apollo",
+        "Wide variety of pipes, angles, channels, flats, fencing jali, and barbed wire in multiple sizes",
+        "Suitable for industrial, residential, agricultural, and commercial uses",
+        "Custom lengths, cutting, and bulk supply available",
+        "Reliable pricing and timely delivery"
       ],
       features: [
         'High tensile strength',
@@ -241,56 +258,55 @@ const ProductDetail = () => {
         'Precision engineered',
         'Cost-effective solution'
       ],
-      productType: [{
-        image: [barbed, mscCover, mschanel],
-        name: "Api Apollo",
-        description: `APL Apollo is renowned for its innovative range of structural steel tubes, angles, channels, flats, fencing solutions, and barbed wire. With high strength-to-weight ratio, excellent surface finish, and easy weldability, APL Apollo products are widely used in modern architecture and infrastructure.
+      productType: [
+        {
+          image: [Apiapollo, mscCover, mschanel],
+          name: "Apl Apollo",
+          description: `APL Apollo is renowned for its innovative range of structural steel tubes, angles, channels, flats, fencing solutions, and barbed wire. With high strength-to-weight ratio, excellent surface finish, and easy weldability, APL Apollo products are widely used in modern architecture and infrastructure.
+          Key Applications & Features:
+          - Pre-engineered buildings (PEBs)
+          - Residential and commercial framing
+          - Infrastructure projects
+          - Fabrication, partitions, fencing, and boundary security
+          - Gates, supports, base structures, and metal furniture (MS Flats)
 
-        Key Applications & Features:
-        - Pre-engineered buildings (PEBs)
-        - Residential and commercial framing
-        - Infrastructure projects
-        - Fabrication, partitions, fencing, and boundary security
-        - Gates, supports, base structures, and metal furniture (MS Flats)
-
-        Available Sizes:
-        - Round Pipes: 1/2" to 8" diameter
-        - Square Pipes: 20x20 mm to 200x200 mm
-        - Rectangular Pipes: 40x20 mm to 250x150 mm
-        - Angles: 25x25x3 mm to 110x110x10 mm
-        - Channels: 75x40 mm to 200x75 mm
-        - MS Flats: Width – 20 mm to 200 mm, Thickness – 3 mm to 12 mm
-        - Fencing Jali: 1 mm to 6 mm wire thickness, various mesh options available (square/rectangular)
-        - Barbed Wire: 12 gauge, 14 gauge (ISI Marked)
-        - Wall thickness: 1.2 mm to 8 mm
-        `
-      },
+          Available Sizes:
+          - Round Pipes: 1/2" to 8" diameter
+          - Square Pipes: 20x20mm to 200x200 mm
+          - Rectangular Pipes: 40x20 mm to 250x150 mm
+          - Angles: 25x25x3 mm to 110x110x10 mm
+          - Channels: 75x40 mm to 200x75 mm
+          - MS Flats: Width – 20 mm to 200 mm, Thickness – 3 mm to 12 mm
+          - Fencing Jali: 1 mm to 6 mm wire thickness, various mesh options available (square/rectangular)
+          - Barbed Wire: 12 gauge, 14 gauge (ISI Marked)
+          - Wall thickness: 1.2 mm to 8 mm`
+        },
         {
           image: [MSFLat, MSquare],
           name: 'TATA MS',
           description: `TATA Structural products are manufactured using advanced technology to ensure high load-bearing capacity, corrosion resistance, and dimensional accuracy. Trusted by architects and engineers alike, TATA MS structures are perfect for industrial and commercial applications.
 
-        Common Applications:
-        - Industrial sheds and warehouses
-        - Frame structures and trusses
-        - Fencing, railing, gates, and grills
-        - Roofing, fabrication, and base structures
-        - Agricultural boundary protection (Barbed Wire)
-        - Base plates, window grills, and fabrication (MS Flats)
+          Key Applications & Features:
+          - Industrial sheds and warehouses
+          - Frame structures and trusses
+          - Fencing, railing, gates, and grills
+          - Roofing, fabrication, and base structures
+          - Agricultural boundary protection (Barbed Wire)
+          - Base plates, window grills, and fabrication (MS Flats)
 
-        Available Sizes:
-        - Round Pipes: 1/2" to 6" diameter
-        - Square Pipes: 25x25 mm to 150x150 mm
-        - Rectangular Pipes: 40x20 mm to 150x100 mm
-        - Angles: 25x25x3 mm to 100x100x10 mm
-        - Channels: 75x40 mm to 150x75 mm
-        - MS Flats: Width – 20 mm to 150 mm, Thickness – 3 mm to 12 mm
-        - Fencing Jali: 1 mm to 5 mm wire thickness, 25x25 mm to 100x100 mm mesh sizes
-        - Barbed Wire: 12 gauge, 14 gauge (Standard & Heavy Duty)
-        - Wall thickness: 1.2 mm to 6 mm
-        `
-      }
+          Available Sizes:
+          - Round Pipes: 1/2" to 6" diameter
+          - Square Pipes: 25x25 mm to 150x150 mm
+          - Rectangular Pipes: 40x20 mm to 150x100 mm
+          - Angles: 25x25x3 mm to 100x100x10 mm
+          - Channels: 75x40 mm to 150x75 mm
+          - MS Flats: Width – 20 mm to 150 mm, Thickness – 3 mm to 12 mm
+          - Fencing Jali: 1 mm to 5 mm wire thickness, 25x25 mm to 100x100 mm mesh sizes
+          - Barbed Wire: 12 gauge, 14 gauge (Standard & Heavy Duty)
+          - Wall thickness: 1.2 mm to 6 mm`
+        }
       ]
+
     },
     // AC Sheets
     'ac-sheets': {
@@ -1021,7 +1037,7 @@ const ProductDetail = () => {
           {/* Specifications */}
           <Card>
             <CardHeader>
-              <CardTitle>Product Specifications</CardTitle>
+              <CardTitle>Why Buy From Vishesh Build Mart?</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">
@@ -1081,37 +1097,27 @@ const ProductDetail = () => {
                   {/* Description */}
                   {subProduct?.description?.split("\n").map((line, i) => {
                     const trimmed = line.trim();
-                    if (!trimmed) return null; // skip empty lines
+                    if (!trimmed) return null;
+
+                    // Bullet points
                     if (trimmed.startsWith("-")) {
-                      // Bullet points
                       return (
-                        <ul
-                          key={i}
-                          className="list-disc list-inside text-sm text-gray-700"
-                        >
+                        <ul key={i} className="list-disc list-inside text-sm text-gray-700">
                           <li>{trimmed.replace("-", "").trim()}</li>
                         </ul>
                       );
                     }
-                    // Detect and render clickable links
-                    if (trimmed.startsWith("👉") || trimmed.startsWith("http")) {
-                      const urlMatch = trimmed.match(
-                        /(https?:\/\/[^\s]+)/
+
+                    // Lines with colon → bold before first colon
+                    if (trimmed.includes(":")) {
+                      const [beforeColon, afterColon] = trimmed.split(/:(.+)/);
+                      return (
+                        <p key={i} className="text-sm text-gray-700 mb-1">
+                          <span className="font-semibold">{beforeColon}:</span>{afterColon}
+                        </p>
                       );
-                      if (urlMatch) {
-                        return (
-                          <a
-                            key={i}
-                            href={urlMatch[0]}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-500 underline text-sm mb-1"
-                          >
-                            {trimmed}
-                          </a>
-                        );
-                      }
                     }
+
                     // Normal paragraph
                     return (
                       <p key={i} className="text-sm text-gray-700 mb-1">
@@ -1119,6 +1125,9 @@ const ProductDetail = () => {
                       </p>
                     );
                   })}
+
+
+
                 </div>
               </Card>
             ))

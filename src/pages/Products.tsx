@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Building, Wrench, Droplets, Paintbrush, Hammer, ShoppingCart, LucideX } from 'lucide-react';
 import Cover from '@/assets/Products/Ultratec Cement.png';
 //second
-import rebar from '@/assets/tmt/rebardcover.webp';
+import rebar from '@/assets/tmt/Apl Apollo.webp';
 //msccover
-import mscCover from '@/assets/Products/MS Structures.jpg';
+import mscCover from '@/assets/Products/MSCoverImage.png';
 //acsheet 
 import cover from '@/assets/Products/AC & GC Roofing sheets.jpg';
 //pipes

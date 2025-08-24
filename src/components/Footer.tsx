@@ -52,7 +52,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-orange-400">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-orange-500 mt-1" />
+                <MapPin className="h-12 w-12 text-orange-500 mt-1" />
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
                     "Bilaspur, Chhattisgarh"
@@ -61,8 +61,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
-                  <p>Main Store Address</p>
-                  <p>Bilaspur, Chhattisgarh</p>
+                  <p>Jagmal Chowk, nearby Yamaha Showroom, Dayalband Main Road, Bilaspur, Chhattisgarh 495001</p>
                 </a>
               </div>
 
@@ -72,7 +71,12 @@ const Footer = () => {
                   href="tel:+919755853857"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
-                  +91 9755853857
+                  +91-9755853857 ,
+                </a>
+                <a
+                  href="tel:+919755853857"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >9981190855
                 </a>
               </div>
 
