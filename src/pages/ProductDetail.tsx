@@ -76,22 +76,30 @@ import walladhesive from '@/assets/tiles-adhesive/astral.avif';
 import wallputy from '@/assets/tiles-adhesive/download.jpg';
 import tiles from '@/assets/tiles-adhesive/tiles-adhesvie.jpg';
 //paints
-import acrylic from '@/assets/paint&putty/acrylic.jpg';
-import Assian from '@/assets/paint&putty/assian.webp';
-import paint from '@/assets/paint&putty/paint.jpg';
-import walllputty from '@/assets/paint&putty/images.jpg';
+import acrylic from '@/assets/paint&putty/opusimage.jpeg';
+import Assian from '@/assets/paint&putty/opusforegorund.jpeg';
+import paint from '@/assets/paint&putty/opusbackground.jpeg';
+import wallputty from '@/assets/paint&putty/birla-opus-paints-1000x1000.webp';
+import opusprime from '@/assets/paint&putty/opuspriime.jpeg';
 //luxury 
 import luxuryone from '@/assets/luxury/download.jpg';
-import luzuzry from '@/assets/luxury/luzury.jpg';
+import luzuryandwellness from '@/assets/luxury/Rakxa-Wellness-on-a-teste-pour-vous-Luxe-Wellness-Club-31.jpg';
+import luxuryofLife from '@/assets/luxury/luxuryofLife.jpg';
+import luxuary from '@/assets/luxury/luxuary.jpeg';
+import jaquazzi from '@/assets/luxury/jaquazzi.jpeg';
+import bathtub from '@/assets/luxury/bathtub.jpeg';
 import wellness from '@/assets/luxury/wellness.jpg';
+import Colstone from '@/assets/logos/Colstone.png';
+import sauna from '@/assets/luxury/sauna.jpeg';
 import { Description } from '@radix-ui/react-toast';
-import grohe from '@/assets/luxury/grohe.png';
-import American from '@/assets/luxury/American.png';
+import grohe from '@/assets/logos/Grohe.png';
+import American from '@/assets/logos/American-Standard.png';
 import { features } from 'process';
 import Mirror3 from '@/assets/mirror/mirror3.png';
 import Mirror from '@/assets/mirror/mirror.png';
 import Mirror2 from '@/assets/mirror/mirror2.png';
 import Mirror4 from '@/assets/mirror/mirror4.png';
+import jaguar from '@/assets/logos/Jaquar-removebg-preview.png';
 const ProductDetail = () => {
   const { productSlug } = useParams();
 
@@ -804,161 +812,176 @@ const ProductDetail = () => {
       name: 'Premium Wall Paint',
       brand: 'Birla Opus',
       category: 'Paint',
-      coverImage: wallputy,
-      image: [Assian, wallputy, paint, acrylic],
+      coverImage: wallputty,
+      image: [Assian, wallputty, paint, opusprime, acrylic],
       description: `At Vishesh Build Mart, we help you lay the perfect foundation for your dream walls 
       with high-performance paints and putty solutions from the trusted Birla brand. Whether 
       you’re building a new space or renovating an old one, our range ensures smooth finishes,
       rich colors, and long-lasting protection for every surface.`,
       specifications: [
-        'Type: Acrylic/Enamel',
-        'Coverage: 120-140 sq.ft per liter',
-        'Drying Time: 2-4 hours',
-        'Recoat Time: 4-6 hours',
-        'Finish: Matt/Gloss/Semi-gloss'
+        "Homes & Apartments",
+        "Commercial Spaces",
+        "Hotels & Showrooms",
+        "New Construction & Renovation Projects"
       ],
       features: [
-        'Excellent coverage',
-        'Fade resistant colors',
-        'Easy application',
-        'Washable finish',
-        'Environment friendly'
+        'Smoothens wall surface and covers imperfections',
+        'Strong bonding with plastered walls',
+        'Prevents flaking and dampness',
+        'Suitable for both interior and exterior applications'
       ],
       productType: [
         {
           name: "Paint",
           image: [paint],
           description: `
-        Superior Finish. Long-Lasting Brilliance.
+        Superior Finish. Long-Lasting Brilliance:
         Birla Opus is a new-age paint solution designed to offer rich textures, vibrant color payoff, and superior wall protection for both interiors and exteriors.
         Key Features:
-        - Excellent coverage and smooth application
-        - Durable and weather-resistant finish
-        - Low VOC for a safer indoor environment
-        - Wide range of shades and finishes available`
+        - Excellent coverage and smooth: application
+        - Durable and weather-resistant: finish
+        - Low VOC for a safer indoor: environment
+        - Wide range of shades and finishes: available`
         },
         {
           name: "Putty",
           image: [acrylic],
           description: `
-        Strong Base. Flawless Finish.
+        Strong Base. Flawless Finish:
         Birla White Wall Putty is India’s most trusted solution for preparing smooth, crack-free, and paint-ready walls. It enhances paint performance and provides a durable surface that lasts for years.
         Key Features:
-        - Smoothens wall surface and covers imperfections
-        - Strong bonding with plastered walls
-        - Prevents flaking and dampness
-        - Suitable for both interior and exterior applications`
+        - Smoothens wall surface and covers: imperfections
+        - Strong bonding with plastered: walls
+        - Prevents flaking and dampness: walls
+        - Suitable for both interior and exterior: applications`
         },
       ]
     },
 
     'luxury-wellness': {
-      name: 'Luxury Bathroom Fixtures',
-      brand: 'Jaquar',
+      name: 'Luxury & Wellness',
+      brand: '',
       category: 'Luxury & Wellness',
-      coverImage: [luzuzry],
-      image: [luzuzry, luxuryone, wellness],
-      description: `Indulge in Everyday Elegance - Bathtubs | Whirlpools | Steam Systems | Spa Equipment
-                    At Vishesh Build Mart, we bring you a carefully curated collection of luxury bathroom 
-                    and wellness solutions designed to turn your space into a personal sanctuary. Whether 
-                    you're building a dream bathroom or upgrading to a modern spa experience, our offerings
-                     combine comfort, innovation, and aesthetics.We proudly deal in premium brands like Grohe, 
-                     American Standard, Jaquar, and Colstone, known globally for their superior craftsmanship and wellness technology.`,
+      coverImage: [bathtub],
+      image: [jaquazzi, bathtub, sauna, luxuary, luxuryone,],
+      description: `
+      <strong>Indulge in Everyday Elegance – Bathtubs | Whirlpools | Steam Systems | Spa Equipment</strong><br/>
+At <strong>Vishesh Build Mart</strong>, we bring you a carefully curated collection of <strong>luxury bathroom and wellness solutions</strong> designed to turn your space into a personal sanctuary.Whether you're building a dream bathroom or upgrading to a modern spa experience, our offerings combine comfort, innovation, and aesthetics.
+We proudly deal in premium brands like <strong>Grohe, American Standard, Jaquar, and Colstone</strong>, known globally for their superior craftsmanship and wellness technology.`,
       specifications: [
-        'Material: Acrylic/Fiberglass',
-        'Capacity: 200-400 liters',
-        'Features: Massage jets, LED lights',
-        'Installation: Freestanding/Built-in',
-        'Warranty: 5 years'
+        `💡 Upgrade your bathroom into a luxury retreat.
+            Visit Vishesh Build Mart today to explore live models,
+            talk to our wellness experts, and experience the future of bathroom living.`
       ],
       features: [
-        'Hydrotherapy massage',
-        'LED chromotherapy',
-        'Digital controls',
-        'Premium materials',
-        'Energy efficient'
+
       ],
       productType: [
         {
-          name: "Grohe",
+          name: "🛁 Grohe",
           image: [grohe],
-          description: `Grohe European Wellness Engineered for Comfort.
+          link: "https://www.mygrohe.com/catalogue/grohe",
+          description: `European Wellness. Engineered for Comfort:
         - Freestanding and built-in bathtubs
-        - Smart digital showers and steam systems
-        - Soothing whirlpool tubs with air & water jets
-        - Eco-friendly spa features with minimalist design`
+        - Smart digital showers: and steam systems
+        - Soothing whirlpool tubs: with air & water jets
+        - Eco-friendly spa features: with minimalist design
+      `
         },
         {
-          name: "American Standard Relaxation ",
+          name: "🛁 American Standard Relaxation ",
           image: [American],
-          description: `American Standard Relaxation Meets Innovation.
-          - Ergonomic bathtubs with contoured support
-          - Whirlpool and massage systems for hydrotherapy
-          - Sleek spa solutions designed for wellness and hygiene
-          - Perfect fusion of performance and comfort`
+          link: 'https://www.mygrohe.com/catalogue/american-standard',
+          description: `Relaxation Meets Innovation:
+          - Ergonomic bathtubs: with contoured support
+          - Whirlpool and massage systems: for hydrotherapy
+          - Sleek spa solutions designed: for wellness and hygiene
+          - Perfect fusion of performance: and comfort`
+        },
+        {
+          name: "🛁 Jaquar",
+          image: [jaguar],
+          link: "https://www.jaquar.com/en/mobile",
+          description: `Transform Your Bathroom into a Private Spa:
+          - Complete luxury bath solutions: including bathtubs, jacuzzi, and steam cabins
+          - Premium whirlpool systems: with LED chromotherapy
+          - Wellness showers and advanced: spa fittings
+          - Trusted brand for high: - end residential and hospitality projects`
         },
         {
           name: "Colstone",
-          image: [American],
-          description: `Colstone Affordable Luxury.Functional Design.
-          - Compact spa systems and stylish bathtubs
-          - Budget- friendly wellness solutions with a premium look
-          - Durable construction with modern finishes
-          - Ideal for homes, salons, and boutique hotels`
+          image: [Colstone],
+          link: "https://colstonconcepts.com/wellness-bath/",
+          description: `Affordable Luxury Functional Design:
+          - Compact spa systems and stylish: bathtubs
+          - Budget- friendly wellness solutions: with a premium look
+          - Durable construction: with modern finishes
+          - Ideal for homes, salons, and boutique: hotels`
         }
       ]
     },
     'Mirror': {
       name: "Mirrors",
-      brand: "Designer LED Mirrors and Customized Mirror Solutions from Glazonoid",
+      brand: "",
       category: "Mirror",
       coverImage: [Mirror],
       image: [Mirror, Mirror2, Mirror3, Mirror4, Mirror, Mirror2],
-      description: `Glazonoid is a leading name in high-end, intelligent mirror solutions. 
-      Their mirrors are not just reflective surfaces – they’re smart décor elements that offer lighting, 
-      functionality, and personalization. The range includes LED vanity mirrors, smart mirrors with integrated features, 
-      customized designer mirrors, and high-performance makeup & salon mirrors, all designed to elevate interiors 
-      with style and innovation.`,
+      description: `<strong>Add Style, Function & Smartness to Every Space</strong><br/>
+        At <strong>Vishesh Build Mart</strong>, we bring a touch of elegance and technology to your interiors with 
+        <strong>Designer LED Mirrors and Customized Mirror Solutions from Glazonoid </strong>– one of India’s most innovative mirror
+        brands. Designed to enhance modern homes, luxury bathrooms, vanity areas, salons,
+          and commercial interiors, <strong>Glazonoid mirrors</strong> blend aesthetics with smart features
+          <br/> <br/>
+        <strong>💡 Ready to elevate your space with style and tech?</strong>
+        Visit <strong>Vishesh Build Mart</strong> today to explore stunning mirror displays
+        and consult with our experts on <strong>personalized mirror solutions from Glazonoid.</strong>
+          `,
       specifications: [
-        "LED Vanity Mirrors – backlit, front-lit & edge-lit options",
-        "Touch sensor, dimmable lights, and color temperature control",
-        "Smart Mirrors – digital clock, weather updates, Bluetooth speakers",
-        "Custom Shapes – Round, Oval, Rectangular, Abstract",
-        "Frame Options – Wooden, Metallic, Frameless",
-        "High-lumen lighting for makeup & salon use",
-        "Anti-fog and high-clarity glass"
-      ],
-      features: [
-        "Sleek, space-saving, and modern designs",
+        "Sleek, space - saving, and modern designs",
         "Custom size and lighting options available",
         "Perfect for bathrooms, dressing areas, salons, and interiors",
         "Durable build with premium mirror clarity",
-        "After-sales support and installation guidance"
+        "After- sales support and installation guidance"
+      ],
+      features: [
+        `- Glazonoid: is a leading name in high-end, intelligent mirror solutions.
+        Their mirrors are not just reflective surfaces – they’re smart décor 
+        elements that offer lighting, functionality, and personalization.`
       ],
       productType: [
         {
           name: "LED Vanity Mirrors",
           image: [Mirror],
-          description: `Available in backlit, front-lit, and edge-lit designs with touch sensor controls, 
-          dimmable lights, and adjustable color temperature.`
+          link: "https://drive.google.com/file/d/1FOmkwaXKQbX45eqTjukrQI7BbK77Exkx/view?usp=sharing",
+          description: `With backlit: front-lit & edge-lit options
+                        Touch sensor: dimmable lights, and color temperature control`
         },
         {
           name: "Smart Mirrors",
           image: [Mirror2],
-          description: `Integrated with digital clock, weather updates, and Bluetooth speakers. 
-        Perfect for smart bathrooms, luxury homes, and hotel washrooms.`
+          link: "https://drive.google.com/file/d/1FOmkwaXKQbX45eqTjukrQI7BbK77Exkx/view?usp=sharing",
+          description: `
+          -Integrated with: digital clock, weather updates, and Bluetooth speakers
+          -Ideal for: smart bathrooms, luxury homes, and hotel washrooms`
         },
         {
           name: "Customized Designer Mirrors",
           image: [Mirror3],
-          description: `Customizable in shapes like Round, Oval, Rectangular, Abstract with frame options 
-        in wood, metal, or frameless styles. Tailored to your space and theme.`
+          link: "https://drive.google.com/file/d/1FOmkwaXKQbX45eqTjukrQI7BbK77Exkx/view?usp=sharing",
+          description: `
+          - Shapes: Round, Oval, Rectangular, Abstract
+          - Frames: Wooden, Metallic, Frameless
+          - Sizes and styles: tailored to your space and design theme
+`
         },
         {
           name: "Makeup & Salon Mirrors",
           image: [Mirror4],
-          description: `High-lumen lighting for perfect visibility, with anti-fog and high-clarity 
-          features ideal for pr`
+          link: "https://drive.google.com/file/d/1FOmkwaXKQbX45eqTjukrQI7BbK77Exkx/view?usp=sharing",
+          description: `
+          - High-lumen lighting for :perfect visibility
+          - Anti-fog & high-clarity: features
+`
         }]
     }
   };
