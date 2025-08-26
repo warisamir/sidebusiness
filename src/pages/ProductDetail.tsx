@@ -10,6 +10,7 @@ import PPC from '@/assets/Cement/PPC.png';
 import PSC from '@/assets/Cement/PSC.png';
 import Cover from '@/assets/Cement/coverimage.png';
 //second
+import AplApollologo from '@/assets/logos/APL APOLLO.png';
 import Apiapollo from '@/assets/tmt/Apl Apollo.webp';
 import Kamdhenu from '@/assets/tmt/Kamdhenu.jpg';
 import MST from '@/assets/tmt/MSP TMT.webp';
@@ -21,6 +22,7 @@ import c2 from '@/assets/msstructure/c2.jpg';
 import fencing from '@/assets/msstructure/MSCoverImage.png';
 import mschanel from '@/assets/msstructure/MS channel.jpg';
 import MSFLat from '@/assets/msstructure/MS FLATS.webp';
+import TATAmslogo from '@/assets/logos/MSP.png'
 import Msround from '@/assets/msstructure/MS Round Pipe.webp';
 import msquare from '@/assets/msstructure/MS Square Pipe.png';
 import mainangle from '@/assets/msstructure/MS-Main-Angle.jpg';
@@ -43,6 +45,7 @@ import silaid from '@/assets/pipes/Silaid Rubber Lubricants.png';
 import Silbond from '@/assets/pipes/Silbond Solvent.png';
 import SWR from '@/assets/pipes/SWR Pipe & Drainage Systems.png';
 import UPVC from '@/assets/pipes/UPVC.png';
+import coverFitting from '@/assets/pipes/Cover supreme.jpg';
 //waterprofing
 import waterprofing from '@/assets/waterprofing/Coverpage.webp';
 import water from '@/assets/waterprofing/water.jpg';
@@ -51,6 +54,7 @@ import faucet from '@/assets/faucet/faucet.jpg';
 import front from '@/assets/faucet/front.jpg';
 import tap from '@/assets/faucet/tap.jpg';
 import downld from '@/assets/faucet/download.png';
+import coverfaucet from '@/assets/faucet/coverimage.png';
 //watertank
 import Amrutam from '@/assets/waterTank/Amrutam Underground Water Storage Tanks.jpg';
 import Copper from '@/assets/waterTank/CopperSheild Water Tanks.png';
@@ -60,11 +64,13 @@ import Weather from '@/assets/waterTank/WeatherShield Premium Overhead Water Sto
 import Cool from '@/assets/vectuswatertank/Cool.webp';
 import Granite from '@/assets/vectuswatertank/Granito.webp';
 import mini from '@/assets/vectuswatertank/mini.webp';
+import sntexwatertank from '@/assets/waterTank/sintexwatertank.jpeg';
 //waterTreatmentSolution 
 import watertreatment from '@/assets/waterTreatment/image.png';
-import watertr from '@/assets/waterTreatment/images.jpg';
+import waterCover from '@/assets/waterTreatment/hqcover.jpg';
+import watertr from '@/assets/waterTreatment/Pressurepump.png';
 import Mhome from "@/assets/waterTreatment/3Mhome.png";
-import havell from '@/assets/waterTreatment/havell.png';
+import havell from '@/assets/waterTreatment/havelltreament.png';
 //tiles-adhesive
 import walladhesive from '@/assets/tiles-adhesive/astral.avif';
 import wallputy from '@/assets/tiles-adhesive/download.jpg';
@@ -260,7 +266,7 @@ const ProductDetail = () => {
       ],
       productType: [
         {
-          image: [Apiapollo, mscCover, mschanel],
+          image: [AplApollologo, mscCover, mschanel],
           name: "Apl Apollo",
           description: `APL Apollo is renowned for its innovative range of structural steel tubes, angles, channels, flats, fencing solutions, and barbed wire. With high strength-to-weight ratio, excellent surface finish, and easy weldability, APL Apollo products are widely used in modern architecture and infrastructure.
           Key Applications & Features:
@@ -271,10 +277,10 @@ const ProductDetail = () => {
           - Gates, supports, base structures, and metal furniture (MS Flats)
 
           Available Sizes:
-          - Round Pipes: 1/2" to 8" diameter
-          - Square Pipes: 20x20mm to 200x200 mm
-          - Rectangular Pipes: 40x20 mm to 250x150 mm
-          - Angles: 25x25x3 mm to 110x110x10 mm
+          - Round Pipes : 1/2" to 8" diameter
+          - Square Pipes : 20x20mm to 200x200 mm
+          - Rectangular Pipes : 40x20 mm to 250x150 mm
+          - Angles : 25x25x3 mm to 110x110x10 mm
           - Channels: 75x40 mm to 200x75 mm
           - MS Flats: Width – 20 mm to 200 mm, Thickness – 3 mm to 12 mm
           - Fencing Jali: 1 mm to 6 mm wire thickness, various mesh options available (square/rectangular)
@@ -282,7 +288,7 @@ const ProductDetail = () => {
           - Wall thickness: 1.2 mm to 8 mm`
         },
         {
-          image: [MSFLat, MSquare],
+          image: [TATAmslogo, MSFLat, MSquare],
           name: 'TATA MS',
           description: `TATA Structural products are manufactured using advanced technology to ensure high load-bearing capacity, corrosion resistance, and dimensional accuracy. Trusted by architects and engineers alike, TATA MS structures are perfect for industrial and commercial applications.
 
@@ -318,13 +324,13 @@ const ProductDetail = () => {
       description: `At Vishesh Build Mart, we offer a trusted collection of AC (Asbestos Cement) and GC 
       (Galvanised Corrugated) roofing sheets from the top industry brands TATA and Everest.
        These roofing solutions are ideal for providing sturdy, weather-resistant coverage for homes,
-        factories, farmhouses, and industrial buildings.`,
+        factories, farmhouses, and industrial buildings.<br/>
+        📞 Visit our store or contact us today to get the best deals and expert recommendations for your roofing requirements.`,
       specifications: [
-        'Available Brands: TATA, Everest',
-        'AC Roofing Sheet Sizes: 6 ft, 8 ft, 10 ft, 12 ft',
-        'AC Sheet Thickness: 6 mm, 8 mm',
-        'GC Roofing Sheet Sizes: 6 ft to 12 ft',
-        'GC Sheet Thickness: 0.25 mm to 0.63 mm'
+        "Genuine products from TATA and Everest",
+        "Availability of both AC and GC Sheets in standard sizes",
+        "Expert advice and guidance for your roofing needs",
+        "Bulk orders and on- site delivery support"
       ],
 
       features: [
@@ -337,10 +343,12 @@ const ProductDetail = () => {
       ],
       productType: [
         {
-          name: "Everest AC Sheets, TATA AC Sheets",
+          name: "AC Roofing Sheets (Asbestos Cement)",
           image: [Acsheet],
-          description: `AC sheets are made from a mix of cement and reinforcing fibres, 
-        known for their excellent insulation properties and resistance to extreme temperatures.
+          description:
+          `- Brands Available: Everest AC Sheets, TATA AC Sheets
+          - Description : AC sheets are made from a mix of cement and reinforcing fibres,
+          known for their excellent insulation properties and resistance to extreme temperatures.
       Applications:
       - Rural and agricultural shelters
       - Industrial warehouses
@@ -354,7 +362,7 @@ const ProductDetail = () => {
       - Low maintenance
 
       Available Sizes:
-      - 6 ft
+      -6 ft
       - 8 ft
       - 10 ft
       - 12 ft
@@ -365,10 +373,11 @@ const ProductDetail = () => {
       `
         },
         {
-          name: "TATA Shaktee, Everest GC Sheets",
+          name: "GC Roofing Sheets (Galvanised Corrugated)",
           image: [GCsheet],
-          description: `GC sheets are made of galvanized steel with a protective zinc coating, 
-        offering excellent corrosion resistance and structural strength.
+          description: `
+          - Brands Available : TATA Shaktee, Everest GC Sheets
+          - Description : GC sheets are made of galvanized steel with a protective zinc coating, offering excellent corrosion resistance and structural strength.
         Applications:
         - Residential sheds
         - Garages and workshops
@@ -417,15 +426,16 @@ const ProductDetail = () => {
 
     // Pipes
     'pipes': {
-      name: 'CPVC & UPVC Pipes',
+      name: ' Plumbing pipeline & fittings',
       brand: 'Supreme',
       category: 'Plumbing',
-      coverImage: Agricultre,
+      coverImage: coverFitting,
       image: [CVPC, Nudrain, Nudrinaready, Plastic, Silbond, silaid, SWR, UPVC, Agricultre],
       description: `At Vishesh Build Mart, we bring you the trusted quality of Supreme Industries 
-      – India’s leading brand in piping systems. Known for its innovation, 
-      durability, and performance, Supreme has been setting industry benchmarks for over 75 years. Whether its plumbing, drainage, or agricultural piping needs 
-      – Supreme products ensure long- lasting reliability, safety, and ease of installation.`,
+      – India’s leading brand in piping systems. Known for its innovation, durability, and performance,
+      Supreme has been setting industry benchmarks for over 75 years. Whether it's plumbing, drainage,
+       or agricultural piping needs
+      – Supreme products ensure long-lasting reliability, safety, and ease of installation.`,
       specifications: [
         'Material: CPVC/UPVC',
         'Pressure Rating: 10-25 kg/cm²',
@@ -448,39 +458,40 @@ const ProductDetail = () => {
         Reliable Flow, Long-Lasting Durability – Supreme by Your Side
         Explore our comprehensive range of Supreme plumbing products designed to meet modern water supply requirements with safety, strength, and efficiency.
 
-        🔹 UPVC Pipes & Fittings
-        - Ideal for potable cold water systems
-        - Lightweight, chemical-resistant, and easy to install
+        UPVC Pipes & Fittings :
+            - Ideal for potable cold water systems
+            - Lightweight, chemical-resistant, and easy to install
 
-        🔹 CPVC Pipes & Fittings
-        - Perfect for hot & cold water applications
-        - High thermal resistance and long-lasting durability
+        CPVC Pipes & Fittings :
+          - Perfect for hot & cold water applications
+          - High thermal resistance and long-lasting durability
 
-        🔹 Solvents & Lubricants
-        - Supreme-approved joining solutions for leak-proof installations
-        - Includes pipe adhesives, rubber lubricants, and more
+        Solvents & Lubricants :
+          - Supreme-approved joining solutions for leak-proof installations
+          - Includes pipe adhesives, rubber lubricants, and more
             `
         },
         {
           name: "💧 Drainage Pipelines & Fittings",
           image: [Nudrain],
           description: `
-        Smooth Discharge. Strong Foundation.
-        Ensure uninterrupted drainage flow with Supreme’s durable range for residential, commercial, and infrastructure projects.
+            Smooth Discharge. Strong Foundation.
+            Ensure uninterrupted drainage flow with Supreme’s durable range for residential,
+            commercial, and infrastructure projects.
 
-        🔹 SWR Pipes & Fittings
+         SWR Pipes & Fittings :
         - Designed for soil, waste & rainwater drainage
         - Anti-odor, leak-proof and UV stabilized
 
-        🔹 Agriculture Pipes
+         Agriculture Pipes :
         - Heavy-duty pipes for irrigation, field supply & rural water management
         - High pressure and weather-resistant
 
-        🔹 Readymade Chambers
+         Readymade Chambers :
         - Modular chambers for inspection and underground utility access
         - Easy to install, load-bearing and long service life
 
-        🔹 Nu-Drain Pipes
+         Nu-Drain Pipes :
         - Advanced non-pressure underground drainage system
         - Suitable for municipal and residential sewage networks
             `
@@ -492,20 +503,16 @@ const ProductDetail = () => {
     // Faucets & Sanitaryware
     'faucets-sanitaryware': {
       name: 'Faucets & Sanitaryware – Elegant, Efficient & Enduring',
-      brand: 'Grohe, American Standard, Jaquar, Colstone, Hindware, Aries',
+      brand: '',
       category: 'Faucets & Sanitaryware',
-      coverImage: faucet,
+      coverImage: coverfaucet,
       image: [faucet, tap, front, downld],
-      description: `At Vishesh Build Mart, we offer a wide selection of premium faucets and sanitaryware that blend aesthetics with performance. From luxurious bathrooms to functional commercial spaces, our curated range from top brands ensures style, durability, and hygiene — all in one place.
-        We deal in industry- leading brands like Grohe, American Standard, Jaquar, Colstone, Hindware, and Aries, bringing you only the best in quality and design.
-         Product Range Includes:
-          - Basin & sink mixers
-          - Showers & shower panels
-          - Health faucets
-          - Wall-hung & floor-mounted toilets
-          - Washbasins & vanities
-          - Cisterns, flush plates & urinals
-          - Bath accessories and fittings`,
+      description: `
+      At Vishesh Build Mart, we offer a wide selection of premium faucets and sanitaryware that blend aesthetics with performance.
+      From luxurious bathrooms to functional commercial spaces, our curated range from top brands ensures style, durability, and hygiene
+      — all in one place.
+      We deal in industry-leading brands like Grohe, American Standard, Jaquar, 
+      Colstone, Hindware, and Aries, bringing you only the best in quality and design.`,
       specifications: [
         'Basin & sink mixers',
         'Showers & shower panels',
@@ -516,19 +523,21 @@ const ProductDetail = () => {
         'Bath accessories and fittings'
       ],
       features: [
-        'Elegant designs with premium finishes',
-        'Water-saving & eco-friendly technology',
-        'Durable and easy-clean surfaces',
-        'Wide range for all budget segments',
-        'Trusted global and Indian brands',
-        'Precision control and leak-proof performance'
+        "Basin & sink mixers",
+        "Showers & shower panels",
+        "Health faucets",
+        "Wall - hung & floor - mounted toilets",
+        "Washbasins & vanities",
+        "Cisterns, flush plates & urinals",
+        "Bath accessories and fittings"
       ],
       productType: [
         {
-          name: "🔹Grohe",
+          name: "🔹Grohe ",
           image: [downld],
           description:
-            `German Engineering. Global Elegance.
+            `
+          German Engineering. Global Elegance:
           - Iconic European design
           - Eco-friendly water-saving technology
           - Precision control and flawless chrome finishes
@@ -540,7 +549,7 @@ const ProductDetail = () => {
           name: "🔹 American Standard",
           image: [tap],
           description: `
-            Timeless Comfort with Modern Innovation
+          Timeless Comfort with Modern Innovation:
         - Advanced hygiene technology & ergonomic design
         - Durable, water - efficient products
         - Sleek toilets, washbasins, faucets & wellness solutions
@@ -551,7 +560,8 @@ const ProductDetail = () => {
         {
           name: "🔹Jaquar",
           image: [front],
-          description: `Where Style Meets Reliability
+          description: `
+          Where Style Meets Reliability:
         - Comprehensive bathroom solutions
         - Sleek faucets, showers, flush systems, and accessories
         - Long-lasting chrome finish with leak-proof guarantee
@@ -562,7 +572,8 @@ const ProductDetail = () => {
         {
           name: "🔹Colstone",
           image: [tap],
-          description: `Premium Quality. Contemporary Craftsmanship.
+          description: `
+          Premium Quality. Contemporary Craftsmanship:
         - Modern sanitaryware for stylish spaces
         - Known for elegant designs and solid build
         - Great choice for premium interiors and budget-friendly remodels
@@ -570,27 +581,43 @@ const ProductDetail = () => {
         https://colstonconcepts.com/bathrooms/`
         },
         {
-          name: "",
+          name: "🔹Hindware ",
           image: [downld],
-          description: `Affordable Innovation for Every Home
+          description: `
+          Affordable Innovation for Every Home:
           - Popular Indian brand with wide range
           - Sanitaryware, faucets, cisterns, and bathroom accessories
           - Stain-resistant, easy-clean surfaces
           - Great value without compromising on aesthetics`
+        }, {
+          name: "🔹 Aries",
+          image: [coverfaucet],
+          description: `
+          Smart Sanitary Solutions: 
+        - Reliable and robust construction
+        - Faucets and fittings designed for long life
+        - Ideal for mid - range and utility projects`
       }
       ]
     },
 
     // Water Tanks
     'water-tanks': {
-      name: 'Plastic Water Storage Tanks',
-      brand: 'Sintex',
+      name: 'Water Tanks – Trusted Storage from Top Brands',
+      brand: '',
       category: 'Water Storage',
-      coverImage: [Cool],
+      coverImage: [Amrutam],
       image: [Cool, mini, Granite, Amrutam, Copper, Ecosil, Siltank, Weather],
       description: `At Vishesh Build Mart, we offer a wide range of premium water storage tanks from the most reliable names in the industry 
       – SS Tank, Sintex, Supreme, and Vectus. Whether it’s for residential, commercial, or industrial use, 
-      - our collection ensures safe, hygienic, and long-lasting water storage solutions.`,
+      - our collection ensures safe, hygienic, and long-lasting water storage solutions.
+      <br/>
+      <strong>🔹 Available Sizes & Varieties:</strong>
+      From 200 litres to 10,000 litres, choose the perfect fit for your space and requirement.
+      <br/>
+     <strong>🔹Not sure which tank is right for you? :</strong>
+       Visit Vishesh Build Mart or call our experts for personalized guidance and the best deals on  Sintex, Supreme, and Vectus water tanks.
+`,
       specifications: [
         'Capacity: 500L to 10,000L',
         'Material: Food-grade plastic',
@@ -608,45 +635,44 @@ const ProductDetail = () => {
       productType: [
         {
           name: "🔹 Supreme Water Tanks",
-          image: [Cool],
+          image: [Siltank],
           description: `
-          Strong and sturdy tanks designed for high performance
+          Strong and sturdy tanks designed for :high performance
           100% virgin plastic construction for maximum durability
           Available in both overhead and underground options
           Superior resistance to weather and wear
           Variants Available:
-          - Underground Water Storage Tanks
-          - Siltank Overhead Water Tanks & Loft Tanks
-          - WeatherShield Premium Overhead Water Storage Tanks
-          - Ecosil Overhead Water Tanks
-          - CopperShield Water Tanks 
-          - Copper layer helps maintain water purity and resists <bacteria>`
+          - Underground Water: Storage Tanks
+          - Siltank Overhead: Water Tanks & Loft Tanks
+          - WeatherShield Premium Overhead: Water Storage Tanks
+          - Ecosil Overhead: Water Tanks
+          - CopperShield Water Tanks: Copper layer helps maintain water purity and resists <bacteria>`
         }, {
           name: "🔹Vectus Water Tanks",
-          image: [Siltank],
+          image: [Cool],
           description: `
-          Stylish, durable, and innovative tank designs
+          Stylish, durable, and innovative: tank designs
           Multi-layer protection for UV resistance and temperature control
           Ideal for both domestic and industrial applications
           Available in a variety of models like 3-layer, 4-layer, and anti-bacterial tanks
           Variants Available:
-          - Puff (4 Layer Water Tank)
-          - Ten-X (10 Layer Water Tank)
-          - T-90 (6 Layer Water Tank)
-          - Cool (5 Layer Water Tank)
-          - Safe (4 Layer Water Tank)
-          - Granito (6 Layer Water Tank)
-          - Mini (3 Layer Water Tank)
-          - Smart (3 Layer Water Tank)
-          - Silk (3 Layer Water Tank)`
+          - Puff : (4 Layer Water Tank)
+          - Ten-X :(10 Layer Water Tank)
+          - T-90: (6 Layer Water Tank)
+          - Cool: (5 Layer Water Tank)
+          - Safe: (4 Layer Water Tank)
+          - Granito: (6 Layer Water Tank)
+          - Mini: (3 Layer Water Tank)
+          - Smart: (3 Layer Water Tank)
+          - Silk: (3 Layer Water Tank)`
         },
         {
           name: "🔹Sintex Water Tanks",
-          image: [Silbond],
+          image: [sntexwatertank],
           description: `
             India’s most trusted name in water storage
-            High-quality, food-grade plastic
-            UV-stabilized, durable, and leak-proof designs
+            High-quality, food-grade:  plastic
+            UV-stabilized, durable, and leak-proof: designs
             Available in a wide range of sizes and capacities
             Variants Available:
             - Sintex Trupuf
@@ -668,14 +694,16 @@ const ProductDetail = () => {
 
     // Water Treatment
     'water-Solution': {
-      name: 'Water Solution Systems',
-      brand: 'Aqua Guard',
+      name: 'Water Solutions',
+      brand: '',
       category: 'Water Treatment',
-      coverImage: watertreatment,
-      image: [watertreatment, watertr, Mhome],
-      description: `Smart Systems for Pure, Pressurized & Efficient Water Flow
-        At Vishesh Build Mart, we understand that clean, soft, and well-managed water is essential for every home and business. That’s why we offer a comprehensive range of Water Solutions that enhance water quality, improve pressure, and ensure energy-efficient water heating.
-        We deal in top-tier brands like 3M, Havells, and other reliable manufacturers to bring you cutting-edge water treatment and flow control systems under one roof.`,
+      coverImage: waterCover,
+      image: [],
+      description: `
+      <strong>🔹Smart Systems for Pure, Pressurized & Efficient Water Flow </strong><br>
+        At <strong>Vishesh Build Mart</strong>, we understand that clean, soft, and well-managed water is essential for every home and business.
+        That’s why we offer a comprehensive range of Water Solutions that enhance water quality, improve pressure, and ensure energy-efficient water heating.
+        We deal in top-tier brands like <strong>3M,Havells,</strong>  and other reliable manufacturers to bring you <strong>cutting-edge water treatment and flow control systems </strong> under one roof..`,
       specifications: [
         'Capacity: 100-1000 LPH',
         'Technology: RO+UV+UF',
@@ -693,43 +721,35 @@ const ProductDetail = () => {
       productType: [
         {
           image: [Mhome],
-          nmae: "Water Softeners-3M Home Water Filtration",
+          name: "Water Softeners – 3M Home Water Filtration",
+          link: "https://drive.google.com/file/d/1lF8VeDqQn0OgpLYfdRgO-2KNPIOpwdMx/view?usp=sharing",
           description: `
-        Protect Your Home from Hard Water Damage
+        - Protect Your Home from Hard Water Damage:
         Say goodbye to hard water stains, dry skin, and damaged appliances. Our 3M water softener and filtration systems ensure soft, clean water flows through every tap in your home.
          Key Benefits:
-          - Reduces scale buildup in pipes and appliances
-          - Improves soap and detergent efficiency
-          - Enhances hair and skin health
-          - Compact design with easy maintenance`
+          - Reduces :scale buildup in pipes and appliances
+          - Improves :soap and detergent efficiency
+          - Enhances :hair and skin health
+          - Compact :design with easy maintenance`
         },
         {
           name: " Heat Pumps- Havells",
           image: [havell],
-          description: `Eco-Friendly Hot Water, Anytime
+          link: "https://drive.google.com/file/d/1WxilO8CUHQdJeILPfZIYOkoCvzx7U7dd/view?usp=sharing",
+          description: `
+          - Eco-Friendly Hot Water, Anytime:
           Havells heat pumps provide energy-efficient water heating solutions ideal for homes, hotels, and commercial spaces.
           Key Features:
-          - Saves up to 70% energy compared to electric geysers
-          - Works in all weather conditions
-          - Smart digital controls with temperature presets
-          - Ideal for large families, luxury bathrooms, and hospitality setups`
+          - Saves up to 70% energy: compared to electric geysers
+          - Works in all: weather conditions
+          - Smart digital controls: with temperature presets
+          - Ideal for : large families, luxury bathrooms, and hospitality setups`
         },
         {
-          name: " Heat Pumps- Havells",
-          image: [havell],
-          description: `Eco-Friendly Hot Water, Anytime
-          Havells heat pumps provide energy-efficient water heating solutions ideal for homes, hotels, and commercial spaces.
-          Key Features:
-          - Saves up to 70% energy compared to electric geysers
-          - Works in all weather conditions
-          - Smart digital controls with temperature presets
-          - Ideal for large families, luxury bathrooms, and hospitality setups`
-        },
-        {
-          name: "Pressure Pump",
+          name: "Pressure Pumps",
           image: [watertr],
           description: `
-        Consistent Water Pressure Across Every Floor
+        Consistent Water Pressure Across Every Floor:
         Ensure powerful water flow across your entire property — even during peak usage hours — with our range of high-performance pressure pumps.
         Key Features:
         Ideal for multi-storey buildings & villas
@@ -737,10 +757,10 @@ const ProductDetail = () => {
         Protects appliances like geysers and showers from pressure fluctuations
         Available in multiple capacities and configurations
         Trusted Water Solutions For:
-        - Homes & Apartments
-        - Villas & Farmhouses
-        - Hotels & Guesthouses
-        - Commercial Buildings & Healthcare Units`
+        - Homes &: Apartments
+        - Villas &: Farmhouses
+        - Hotels &: Guesthouses
+        - Commercial Buildings &: Healthcare Units`
       }
       ]
     },
@@ -972,18 +992,18 @@ const ProductDetail = () => {
         </div>
 
         {/* Product Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12 items-stretch">
           {/* Product Image */}
-          <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-96">
+          <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center">
             <img
               src={product.coverImage}
               alt={product.name}
-              className="w-full h-full object-contain rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
 
           {/* Product Information */}
-          <div className="space-y-6">
+          <div className="bg-white p-8 rounded-lg shadow-md flex flex-col justify-between">
             <div>
               <Badge className="mb-4">{product.brand}</Badge>
               <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
@@ -997,7 +1017,7 @@ const ProductDetail = () => {
             </div>
 
             {/* Contact Buttons */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-6">
               <Button className="w-full bg-orange-500 hover:bg-orange-600" size="lg">
                 <Phone className="h-5 w-5 mr-2" />
                 Call for Quote
@@ -1015,6 +1035,8 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
+
+
 
         {/* Image Carousel Card */}
         <Card className="overflow-x-auto no-scrollbar whitespace-nowrap p-4 mb-12">
@@ -1081,39 +1103,72 @@ const ProductDetail = () => {
               <Card key={index} className="flex items-start space-x-4 p-4">
                 {/* Image on the left */}
                 {subProduct?.image?.[0] && (
-                  <img
-                    src={subProduct.image[0]}
-                    alt={`Sub Product ${index + 1}`}
-                    className="w-40 h-40 object-cover rounded-lg shadow-md border"
-                  />
+                  subProduct.link ? (
+                    <a href={subProduct.link} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={subProduct.image[0]}
+                        alt={subProduct.name}
+                        className="w-40 h-40 object-cover rounded-lg shadow-md border cursor-pointer hover:opacity-90"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={subProduct.image[0]}
+                      alt={subProduct.name}
+                      className="w-40 h-40 object-cover rounded-lg shadow-md border"
+                    />
+                    )
                 )}
+
 
                 <div className="flex flex-col">
                   {/* Heading */}
                   {subProduct?.name && (
                     <h3 className="text-lg font-semibold mb-2">{subProduct.name}</h3>
                   )}
-
-                  {/* Description */}
                   {subProduct?.description?.split("\n").map((line, i) => {
                     const trimmed = line.trim();
                     if (!trimmed) return null;
 
-                    // Bullet points
+                    // Section Headings (ending with ":")
+                    if (trimmed.endsWith(":")) {
+                      return (
+                        <h4 key={i} className="text-md font-bold mt-3 mb-1">
+                          {trimmed.replace(":", "")}
+                        </h4>
+                      );
+                    }
+
+                    // Bullet points (may also contain ":")
                     if (trimmed.startsWith("-")) {
+                      const content = trimmed.replace("-", "").trim();
+
+                      if (content.includes(":")) {
+                        const [beforeColon, afterColon] = content.split(/:(.+)/);
+                        return (
+                          <ul key={i} className="list-disc list-inside text-sm text-gray-700">
+                            <li>
+                              <span className="font-semibold">{beforeColon}:</span>
+                              {afterColon}
+                            </li>
+                          </ul>
+                        );
+                      }
+
                       return (
                         <ul key={i} className="list-disc list-inside text-sm text-gray-700">
-                          <li>{trimmed.replace("-", "").trim()}</li>
+                          <li>{content}</li>
                         </ul>
                       );
                     }
 
-                    // Lines with colon → bold before first colon
+                    // Non-bullet but has colon
                     if (trimmed.includes(":")) {
                       const [beforeColon, afterColon] = trimmed.split(/:(.+)/);
                       return (
                         <p key={i} className="text-sm text-gray-700 mb-1">
-                          <span className="font-semibold">{beforeColon}:</span>{afterColon}
+                          <span className="font-semibold">{beforeColon}:</span>
+                          {afterColon}
                         </p>
                       );
                     }
@@ -1125,7 +1180,6 @@ const ProductDetail = () => {
                       </p>
                     );
                   })}
-
 
 
                 </div>
