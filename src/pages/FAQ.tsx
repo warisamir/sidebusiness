@@ -53,7 +53,7 @@ const FAQ = () => {
               Help Center
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Got Questions? <span className="text-orange-500">We've Got Answers!</span>
+              Got Questions? <div className="text-orange-500">We've Got Answers!</div>
             </h1>
             <p className="text-xl text-gray-300">
               Here are answers to some of the most common queries about Vishesh Build Mart

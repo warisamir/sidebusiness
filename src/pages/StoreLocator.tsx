@@ -26,7 +26,7 @@ const StoreLocator = () => {
               Visit Us
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Find Vishesh Build Mart <span className="text-orange-500">Near You</span>
+              Find Vishesh Build Mart <div className="text-orange-500">Near You</div>
             </h1>
             <p className="text-xl text-gray-300">
               Looking for quality building materials? Visit any of our locations to explore our extensive range of products and get expert advice from our team.
