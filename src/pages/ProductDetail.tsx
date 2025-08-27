@@ -542,51 +542,48 @@ const ProductDetail = () => {
       productType: [
         {
           name: "🔹Grohe ",
-          image: [downld],
+          link: 'https://www.mygrohe.com/catalogue/grohe',
+          image: [grohe],
           description:
             `
-          German Engineering. Global Elegance:
+            German Engineering. Global Elegance:
           - Iconic European design
           - Eco-friendly water-saving technology
           - Precision control and flawless chrome finishes
-          - Smart showers, sensor faucets, basin mixers, and more
-          👉 Click to see full Grohe product range:
-          https://www.mygrohe.com/catalogue/grohe`
+          - Smart showers, sensor faucets, basin mixers, and more`
         },
         {
           name: "🔹 American Standard",
-          image: [tap],
+          image: [American],
+          link: 'https://www.mygrohe.com/catalogue/grohe',
           description: `
           Timeless Comfort with Modern Innovation:
         - Advanced hygiene technology & ergonomic design
         - Durable, water - efficient products
         - Sleek toilets, washbasins, faucets & wellness solutions
-        - Trusted in homes and hotels worldwide
-        👉 Click to see full American Standard product range:
-        https://www.mygrohe.com/catalogue/american-standard`
+        - Trusted in homes and hotels worldwide.`
         },
         {
           name: "🔹Jaquar",
-          image: [front],
+          image: [jaguar],
+          link: 'https://www.jaquar.com/en/mobile',
           description: `
           Where Style Meets Reliability:
         - Comprehensive bathroom solutions
         - Sleek faucets, showers, flush systems, and accessories
         - Long-lasting chrome finish with leak-proof guarantee
-        - Wide variety for all budget segments
-        👉 Click to see full Jaquar product range:
-        https://www.jaquar.com/en/mobile`
+        - Wide variety for all budget segments`
         },
         {
           name: "🔹Colstone",
-          image: [tap],
+          image: [Colstone],
+          link: ['https://colstonconcepts.com/bathrooms'],
           description: `
           Premium Quality. Contemporary Craftsmanship:
         - Modern sanitaryware for stylish spaces
         - Known for elegant designs and solid build
         - Great choice for premium interiors and budget-friendly remodels
-        👉 Click to see full Colstone product range:
-        https://colstonconcepts.com/bathrooms/`
+        `
         },
         {
           name: "🔹Hindware ",
@@ -944,7 +941,7 @@ We proudly deal in premium brands like <strong>Grohe, American Standard, Jaquar,
         "After- sales support and installation guidance"
       ],
       features: [
-        `- Glazonoid: is a leading name in high-end, intelligent mirror solutions.
+        `Glazonoid is a leading name in high-end, intelligent mirror solutions.
         Their mirrors are not just reflective surfaces – they’re smart décor 
         elements that offer lighting, functionality, and personalization.`
       ],
