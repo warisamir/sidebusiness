@@ -82,24 +82,43 @@ import paint from '@/assets/paint&putty/opusbackground.jpeg';
 import wallputty from '@/assets/paint&putty/birla-opus-paints-1000x1000.webp';
 import opusprime from '@/assets/paint&putty/opuspriime.jpeg';
 //luxury 
-import luxuryone from '@/assets/luxury/download.jpg';
-import luzuryandwellness from '@/assets/luxury/Rakxa-Wellness-on-a-teste-pour-vous-Luxe-Wellness-Club-31.jpg';
-import luxuryofLife from '@/assets/luxury/luxuryofLife.jpg';
-import luxuary from '@/assets/luxury/luxuary.jpeg';
-import jaquazzi from '@/assets/luxury/jaquazzi.jpeg';
-import bathtub from '@/assets/luxury/bathtub.jpeg';
-import wellness from '@/assets/luxury/wellness.jpg';
-import Colstone from '@/assets/logos/Colstone.png';
-import sauna from '@/assets/luxury/sauna.jpeg';
+import luxuryone from '@/assets/Luxury & Wellness Area/0952354499532539abfae8959cb5a7d7.jpg';
+import luzuryandwellness from '@/assets/Luxury & Wellness Area/14675ccf2edb307a84b52ac92105b900.jpg';
+import luxuryofLife from '@/assets/Luxury & Wellness Area/23b778e14a4eb9b93a76513dd7b5d91c.jpg';
+import luxuary from '@/assets/Luxury & Wellness Area/2550d9b3e106fd8ce75ba231bda5afe5.jpg';
+import jaquazzi from '@/assets/Luxury & Wellness Area/2597498c0f63006f88078977cc5e3db9.jpg';
+import bathtub from '@/assets/Luxury & Wellness Area/30482a85b3bf4b2459c9e36b96857394.jpg';
+import wellness from '@/assets/Luxury & Wellness Area/3fde8f68d5e9e3f63aff1ae2cda3be87.jpg';
+import sauna from '@/assets/Luxury & Wellness Area/480ff8795adb6e5e5fe563c064d731c8.jpg';
+import saunabath from "@/assets/Luxury & Wellness Area/4d790705ae54e5caecf5d2cd793995b4.jpg";
+import club from "@/assets/Luxury & Wellness Area/60887117e88860b9cc3f5701fd7c563a.jpg";
+import clubhouse from "@/assets/Luxury & Wellness Area/d2070b4ef91adf2c4f643b388ca4d966.jpg";
+import house from "@/assets/Luxury & Wellness Area/ee10479e4f74d7d4311dd76630cc4943.jpg";
 import { Description } from '@radix-ui/react-toast';
-import grohe from '@/assets/logos/Grohe.png';
 import American from '@/assets/logos/American-Standard.png';
 import { features } from 'process';
 import Mirror3 from '@/assets/mirror/mirror3.png';
 import Mirror from '@/assets/mirror/mirror.png';
 import Mirror2 from '@/assets/mirror/mirror2.png';
 import Mirror4 from '@/assets/mirror/mirror4.png';
-import jaguar from '@/assets/logos/Jaquar-removebg-preview.png';
+//logos
+import vectus from "@/assets/log/1.jpg";
+import ultratech from "@/assets/log/2.jpg";
+import tataSteel from "@/assets/log/3.jpg";
+import Supreme from "@/assets/log/4.jpg";
+import TMT from "@/assets/log/5.jpg";
+import Sintex from "@/assets/log/6.jpg";
+import jaguar from "@/assets/log/7.jpg";
+import hindware from "@/assets/log/8.jpg";
+import everest from "@/assets/log/9.jpg";
+import grohe from "@/assets/log/10.jpg";
+import Colstone from "@/assets/log/11.jpg";
+import Birla from "@/assets/log/12.jpg";
+import Aris from "@/assets/log/13.jpg";
+import BrilaOpus from "@/assets/log/14.jpg";
+import AmericanStandard from '@/assets/log/15.jpg';
+import aplapollo from '@/assets/log/16.jpg';
+
 const ProductDetail = () => {
   const { productSlug } = useParams();
 
@@ -107,7 +126,7 @@ const ProductDetail = () => {
     // Cement Products
     'cement': {
       name: 'Ultratech Cement',
-      brand: 'UltraTech',
+      brand: '',
       category: 'Cement',
       coverImage: Cover,
       image: [Cement, download, PPC, PSC, Cement, download], //'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
@@ -147,7 +166,7 @@ const ProductDetail = () => {
         },
         {
           image: [download],
-          name: "Oordinary Portland Cement",
+          name: "Ordinary Portland Cement",
           description: `OPC is known for its fast setting properties, making it suitable for time-sensitive projects. However, it may not be the most eco-friendly or budget-efficient option in the long run`
         },
         {
@@ -189,7 +208,7 @@ const ProductDetail = () => {
       ],
       productType: [
         {
-          image: [Apiapollo],
+          image: [aplapollo],
           name: "AplApollo",
           description: `Known for excellent tensile strength and corrosion resistance, 
     APL Apollo TMT bars are ideal for both residential and commercial structures.
@@ -240,7 +259,7 @@ const ProductDetail = () => {
     // MS Structures
     'ms-structures': {
       name: 'MS Structural Angles & Pipes',
-      brand: 'TATA & APL Apollo',
+      brand: '',
       category: 'MS Structures',
       coverImage: fencing,
       image: [barbed, fencing, c2, fencing, msrect, msstruct, mainangle, MSFLat, Msround, mschanel, msquare],
@@ -274,7 +293,7 @@ const ProductDetail = () => {
       ],
       productType: [
         {
-          image: [AplApollologo, mscCover, mschanel],
+          image: [aplapollo],
           name: "Apl Apollo",
           description: `APL Apollo is renowned for its innovative range of structural steel tubes, angles, channels, flats, fencing solutions, and barbed wire. With high strength-to-weight ratio, excellent surface finish, and easy weldability, APL Apollo products are widely used in modern architecture and infrastructure.
           Key Applications & Features:
@@ -296,7 +315,7 @@ const ProductDetail = () => {
           - Wall thickness: 1.2 mm to 8 mm`
         },
         {
-          image: [TATAmslogo, MSFLat, MSquare],
+          image: [tataSteel],
           name: 'TATA MS',
           description: `TATA Structural products are manufactured using advanced technology to ensure high load-bearing capacity, corrosion resistance, and dimensional accuracy. Trusted by architects and engineers alike, TATA MS structures are perfect for industrial and commercial applications.
 
@@ -325,7 +344,7 @@ const ProductDetail = () => {
     // AC Sheets
     'ac-sheets': {
       name: 'AC & GC Roofing Sheets – Reliable Roofing for Every Structure',
-      brand: 'TATA & Everest',
+      brand: '',
       category: 'Roofing',
       coverImage: cover,
       image: [Acsheet, Acsheets, GCsheet, gcroofing],
@@ -407,7 +426,7 @@ const ProductDetail = () => {
     // Waterproofing
     'waterproofing': {
       name: 'SBR Waterproofing Solution',
-      brand: 'UltraTech',
+      brand: '',
       category: 'Waterproofing',
       coverImage: waterprofing,
       image: [waterprofing, water],
@@ -435,7 +454,7 @@ const ProductDetail = () => {
     // Pipes
     'pipes': {
       name: ' Plumbing pipeline & fittings',
-      brand: 'Supreme',
+      brand: '',
       category: 'Plumbing',
       coverImage: coverFitting,
       image: [CVPC, Nudrain, Nudrinaready, Plastic, Silbond, silaid, SWR, UPVC, Agricultre],
@@ -587,7 +606,7 @@ const ProductDetail = () => {
         },
         {
           name: "🔹Hindware ",
-          image: [downld],
+          image: [hindware],
           description: `
           Affordable Innovation for Every Home:
           - Popular Indian brand with wide range
@@ -596,7 +615,7 @@ const ProductDetail = () => {
           - Great value without compromising on aesthetics`
         }, {
           name: "🔹 Aries",
-          image: [coverfaucet],
+          image: [Aris],
           description: `
           Smart Sanitary Solutions: 
         - Reliable and robust construction
@@ -774,7 +793,7 @@ const ProductDetail = () => {
     // Tile Adhesives
     'tile-adhesives': {
       name: 'Premium Tile Adhesives',
-      brand: 'UltraTech',
+      brand: '',
       category: 'Tile Adhesives',
       image: [walladhesive, tiles, wallputy],
       coverImage: walladhesive,
@@ -807,7 +826,7 @@ const ProductDetail = () => {
     // Paint
     'paint': {
       name: 'Premium Wall Paint',
-      brand: 'Birla Opus',
+      brand: '',
       category: 'Paint',
       coverImage: wallputty,
       image: [Assian, wallputty, paint, opusprime, acrylic],
@@ -830,7 +849,7 @@ const ProductDetail = () => {
       productType: [
         {
           name: "Paint",
-          image: [paint],
+          image: [BrilaOpus],
           description: `
         Superior Finish. Long-Lasting Brilliance:
         Birla Opus is a new-age paint solution designed to offer rich textures, vibrant color payoff, and superior wall protection for both interiors and exteriors.
@@ -860,7 +879,7 @@ const ProductDetail = () => {
       brand: '',
       category: 'Luxury & Wellness',
       coverImage: [bathtub],
-      image: [jaquazzi, bathtub, sauna, luxuary, luxuryone,],
+      image: [jaquazzi, bathtub, sauna, luxuary, luxuryone, sauna, saunabath, club, clubhouse, house],
       description: `
       <strong>Indulge in Everyday Elegance – Bathtubs | Whirlpools | Steam Systems | Spa Equipment</strong><br/>
 At <strong>Vishesh Build Mart</strong>, we bring you a carefully curated collection of <strong>luxury bathroom and wellness solutions</strong> designed to turn your space into a personal sanctuary.Whether you're building a dream bathroom or upgrading to a modern spa experience, our offerings combine comfort, innovation, and aesthetics.

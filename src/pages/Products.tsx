@@ -41,7 +41,7 @@ const Products = () => {
       description: "High-quality Ordinary Portland Cement for general construction work with excellent strength and durability."
     },
     {
-      name: "TMT Rebars Fe 415",
+      name: "TMT Rebars",
       brand: "APL Apollo",
       category: "Structural Materials", 
       slug: "tmt-rebars",
@@ -57,7 +57,7 @@ const Products = () => {
       description: "High-quality Mild Steel structural angles and pipes for construction frameworks and supports."
     },
     {
-      name: "AC/GC Roofing Sheets",
+      name: "AC & GC Roofing Sheets",
       brand: "TATA",
       category: "Roofing & Waterproofing",
       slug: "ac-sheets", 
@@ -73,7 +73,7 @@ const Products = () => {
       description: "Advanced waterproofing solution for concrete structures, terraces, and basements."
     },
     {
-      name: "CPVC & UPVC Pipes",
+      name: "Plumbing pipeline & fittings",
       brand: "Supreme",
       category: "Plumbing Solutions",
       slug: "pipes",
@@ -89,7 +89,7 @@ const Products = () => {
       description: "German-engineered kitchen and bathroom faucets with innovative technology and elegant design."
     },
     {
-      name: "Water Storage Tanks",
+      name: "Water Tanks",
       brand: "Sintex",
       category: "Water Solutions", 
       slug: "water-tanks",

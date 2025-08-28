@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "What are your business hours?",
-      answer: "We are open Monday to Saturday from 9:00 AM to 7:00 PM. We're closed on Sundays and public holidays."
+      answer: "We are open Monday to Saturday from 8:00 AM to 8:00 PM,extra hours on Sunday 8:00am to 2:00pm . We're closed on public holidays."
     },
     {
       question: "Do you offer bulk discounts?",
