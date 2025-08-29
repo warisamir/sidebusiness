@@ -4,6 +4,119 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Building, ExternalLink, ShoppingCart } from 'lucide-react';
+import Cement from '@/assets/Cement/Cement.png';
+import download from '@/assets/Cement/OPC.png';
+import PPC from '@/assets/Cement/PPC.png';
+import PSC from '@/assets/Cement/PSC.png';
+import Cover from '@/assets/Cement/coverimage.png';
+import AplApollologo from '@/assets/logos/APL APOLLO.png';
+import Apiapollo from '@/assets/tmt/Apl Apollo.webp';
+import Kamdhenu from '@/assets/tmt/Kamdhenu.jpg';
+import MST from '@/assets/tmt/MSP TMT.webp';
+import shristi from '@/assets/tmt/shristi-1.jpg';
+import rebar from '@/assets/tmt/rebardcover.webp';
+//msstructure 
+import barbed from '@/assets/msstructure/Barbed Wire.avif';
+import c2 from '@/assets/msstructure/c2.jpg';
+import fencing from '@/assets/msstructure/MSCoverImage.png';
+import mschanel from '@/assets/msstructure/MS channel.jpg';
+import MSFLat from '@/assets/msstructure/MS FLATS.webp';
+import TATAmslogo from '@/assets/logos/MSP.png'
+import Msround from '@/assets/msstructure/MS Round Pipe.webp';
+import msquare from '@/assets/msstructure/MS Square Pipe.png';
+import mainangle from '@/assets/msstructure/MS-Main-Angle.jpg';
+import msrect from '@/assets/msstructure/MS-Main-Angle.jpg';
+import msstruct from '@/assets/msstructure/msstrucutre.webp';
+import mscCover from '@/assets/msstructure/cover.jpg';
+//fouth
+import Acsheet from '@/assets/sheet/AC SHEET.webp';
+import Acsheets from '@/assets/sheet/AC SHEETS.webp';
+import GCsheet from '@/assets/sheet/GC SHEETS COLOUR COATED.jpg';
+import gcroofing from '@/assets/sheet/gc-roofing-sheet-500x500.webp';
+import cover from '@/assets/sheet/cover.jpg';
+//fifth
+import CVPC from '@/assets/pipes/CPVC.png';
+import Agricultre from '@/assets/pipes/Agriculture Pressure Pipes & Fittings.jpg';
+import Nudrain from '@/assets/pipes/NU-Drain Readymade Inspection Chambers.jpg';
+import Nudrinaready from '@/assets/pipes/Nu-Drain Pipes.png';
+import Plastic from '@/assets/pipes/Plastic Septic Tank.jpg';
+import silaid from '@/assets/pipes/Silaid Rubber Lubricants.png';
+import Silbond from '@/assets/pipes/Silbond Solvent.png';
+import SWR from '@/assets/pipes/SWR Pipe & Drainage Systems.png';
+import UPVC from '@/assets/pipes/UPVC.png';
+import coverFitting from '@/assets/pipes/Cover supreme.jpg';
+//waterprofing
+import waterprofing from '@/assets/waterprofing/Coverpage.webp';
+import water from '@/assets/waterprofing/water.jpg';
+//faucet
+import faucet from '@/assets/faucet/faucet.jpg';
+import front from '@/assets/faucet/front.jpg';
+import tap from '@/assets/faucet/tap.jpg';
+import downld from '@/assets/faucet/download.png';
+import coverfaucet from '@/assets/faucet/coverimage.png';
+//watertank
+import Amrutam from '@/assets/waterTank/Amrutam Underground Water Storage Tanks.jpg';
+import Copper from '@/assets/waterTank/CopperSheild Water Tanks.png';
+import Ecosil from '@/assets/waterTank/Ecosil Overhead Water Tank.jpg';
+import Siltank from '@/assets/waterTank/Siltank Overhead Water Tanks & Loft Tanks.jpg';
+import Weather from '@/assets/waterTank/WeatherShield Premium Overhead Water Storage Tanks.jpg';
+import Cool from '@/assets/vectuswatertank/Cool.webp';
+import Granite from '@/assets/vectuswatertank/Granito.webp';
+import mini from '@/assets/vectuswatertank/mini.webp';
+import sntexwatertank from '@/assets/waterTank/sintexwatertank.jpeg';
+//waterTreatmentSolution 
+import watertreatment from '@/assets/waterTreatment/image.png';
+import waterCover from '@/assets/waterTreatment/hqcover.jpg';
+import watertr from '@/assets/waterTreatment/Pressurepump.png';
+import Mhome from "@/assets/waterTreatment/3Mhome.png";
+import havell from '@/assets/waterTreatment/havelltreament.png';
+//tiles-adhesive
+import walladhesive from '@/assets/tiles-adhesive/astral.avif';
+import wallputy from '@/assets/tiles-adhesive/download.jpg';
+import tiles from '@/assets/tiles-adhesive/tiles-adhesvie.jpg';
+//paints
+import acrylic from '@/assets/paint&putty/opusimage.jpeg';
+import Assian from '@/assets/paint&putty/opusforegorund.jpeg';
+import paint from '@/assets/paint&putty/opusbackground.jpeg';
+import wallputty from '@/assets/paint&putty/birla-opus-paints-1000x1000.webp';
+import opusprime from '@/assets/paint&putty/opuspriime.jpeg';
+//luxury 
+import luxuryone from '@/assets/Luxury & Wellness Area/0952354499532539abfae8959cb5a7d7.jpg';
+import luzuryandwellness from '@/assets/Luxury & Wellness Area/14675ccf2edb307a84b52ac92105b900.jpg';
+import luxuryofLife from '@/assets/Luxury & Wellness Area/23b778e14a4eb9b93a76513dd7b5d91c.jpg';
+import luxuary from '@/assets/Luxury & Wellness Area/2550d9b3e106fd8ce75ba231bda5afe5.jpg';
+import jaquazzi from '@/assets/Luxury & Wellness Area/2597498c0f63006f88078977cc5e3db9.jpg';
+import bathtub from '@/assets/Luxury & Wellness Area/30482a85b3bf4b2459c9e36b96857394.jpg';
+import wellness from '@/assets/Luxury & Wellness Area/3fde8f68d5e9e3f63aff1ae2cda3be87.jpg';
+import sauna from '@/assets/Luxury & Wellness Area/480ff8795adb6e5e5fe563c064d731c8.jpg';
+import saunabath from "@/assets/Luxury & Wellness Area/4d790705ae54e5caecf5d2cd793995b4.jpg";
+import club from "@/assets/Luxury & Wellness Area/60887117e88860b9cc3f5701fd7c563a.jpg";
+import clubhouse from "@/assets/Luxury & Wellness Area/d2070b4ef91adf2c4f643b388ca4d966.jpg";
+import house from "@/assets/Luxury & Wellness Area/ee10479e4f74d7d4311dd76630cc4943.jpg";
+import { Description } from '@radix-ui/react-toast';
+import American from '@/assets/logos/American-Standard.png';
+import { features } from 'process';
+import Mirror3 from '@/assets/mirror/mirror3.png';
+import Mirror from '@/assets/mirror/mirror.png';
+import Mirror2 from '@/assets/mirror/mirror2.png';
+import Mirror4 from '@/assets/mirror/mirror4.png';
+//logos
+import vectus from "@/assets/log/1.jpg";
+import ultratech from "@/assets/log/2.jpg";
+import tataSteel from "@/assets/log/3.jpg";
+import Supreme from "@/assets/log/4.jpg";
+import TMT from "@/assets/log/5.jpg";
+import Sintex from "@/assets/log/6.jpg";
+import jaguar from "@/assets/log/7.jpg";
+import hindware from "@/assets/log/8.jpg";
+import everest from "@/assets/log/9.jpg";
+import grohe from "@/assets/log/10.jpg";
+import Colstone from "@/assets/log/11.jpg";
+import Birla from "@/assets/log/12.jpg";
+import Aris from "@/assets/log/13.jpg";
+import BrilaOpus from "@/assets/log/14.jpg";
+import AmericanStandard from '@/assets/log/15.jpg';
+import aplapollo from '@/assets/log/16.jpg';
 
 const CategoryDetail = () => {
   const { categorySlug } = useParams();
@@ -16,9 +129,9 @@ const CategoryDetail = () => {
         {
           name: 'UltraTech',
           products: [
-            { name: 'OPC 43 Grade', slug: 'cement', price: '₹350/bag', image: [] },
-            { name: 'OPC 53 Grade', slug: 'cement', price: '₹375/bag', image: [] },
-            { name: 'PPC Cement', slug: 'cement', price: '₹340/bag', image: [] }
+            { name: 'OPC 43 Grade', slug: 'cement', price: '₹350/bag', image: [Cement] },
+            { name: 'OPC 53 Grade', slug: 'cement', price: '₹375/bag', image: [PSC] },
+            { name: 'PPC Cement', slug: 'cement', price: '₹340/bag', image: [PPC] }
           ],
           description: 'Leading cement manufacturer in India with superior quality products'
         }
@@ -269,7 +382,7 @@ const CategoryDetail = () => {
                   <Card key={productIndex} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <img
-                        // src={product.image}
+                        src={product.image}
                         alt={product.name}
                         className="w-full h-40 object-cover rounded-md mb-4"
                       />
@@ -296,6 +409,9 @@ const CategoryDetail = () => {
                     </CardContent>
                   </Card>
 
+
+
+//edvdgdgdsvdcsfe
                 ))}
               </div>
             </div>
